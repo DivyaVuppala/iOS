@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController_iPhone">
+            <connections>
+                <outlet property="accountsImageView" destination="aVz-ig-PML" id="bkA-hN-FAN"/>
+                <outlet property="contactsImageView" destination="beq-qz-4hC" id="LWm-ZP-dcR"/>
+                <outlet property="opportunitiesImageView" destination="c7G-C5-RSk" id="qLI-A1-k7E"/>
+                <outlet property="reportsImageView" destination="8T4-bo-NEj" id="wZf-bR-IPD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5v-kI-yrn">
+                    <rect key="frame" x="42" y="285" width="246" height="246"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reports.png" translatesAutoresizingMaskIntoConstraints="NO" id="8T4-bo-NEj">
+                            <rect key="frame" x="123" y="125" width="123" height="121"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contacts_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="beq-qz-4hC">
+                            <rect key="frame" x="123" y="0.0" width="123" height="121"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="121" id="b3w-Yj-bCY"/>
+                                <constraint firstAttribute="width" constant="123" id="ewx-Wf-siC"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Accounts_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="aVz-ig-PML">
+                            <rect key="frame" x="-4" y="0.0" width="123" height="121"/>
+                            <gestureRecognizers/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Opportunities.png" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-C5-RSk">
+                            <rect key="frame" x="-4" y="125" width="123" height="121"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.047058823529411764" green="0.10588235294117647" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="c7G-C5-RSk" firstAttribute="top" secondItem="8T4-bo-NEj" secondAttribute="top" id="1ph-2b-Kxr"/>
+                        <constraint firstItem="beq-qz-4hC" firstAttribute="leading" secondItem="8T4-bo-NEj" secondAttribute="leading" id="3mJ-7I-KVM"/>
+                        <constraint firstItem="beq-qz-4hC" firstAttribute="top" secondItem="E5v-kI-yrn" secondAttribute="top" id="Ds5-WA-wzv"/>
+                        <constraint firstItem="8T4-bo-NEj" firstAttribute="height" secondItem="c7G-C5-RSk" secondAttribute="height" id="N3L-RL-Vm8"/>
+                        <constraint firstAttribute="trailing" secondItem="beq-qz-4hC" secondAttribute="trailing" id="NRm-f7-Jl6"/>
+                        <constraint firstItem="beq-qz-4hC" firstAttribute="top" secondItem="aVz-ig-PML" secondAttribute="top" id="V4I-S2-6cY"/>
+                        <constraint firstItem="8T4-bo-NEj" firstAttribute="width" secondItem="beq-qz-4hC" secondAttribute="width" id="aCV-Ex-qin"/>
+                        <constraint firstItem="8T4-bo-NEj" firstAttribute="height" secondItem="beq-qz-4hC" secondAttribute="height" id="ah3-kB-5aj"/>
+                        <constraint firstItem="beq-qz-4hC" firstAttribute="leading" secondItem="aVz-ig-PML" secondAttribute="trailing" constant="4" id="cJM-Ik-1IR"/>
+                        <constraint firstAttribute="bottom" secondItem="c7G-C5-RSk" secondAttribute="bottom" id="eXm-uG-Qk5"/>
+                        <constraint firstItem="8T4-bo-NEj" firstAttribute="width" secondItem="aVz-ig-PML" secondAttribute="width" id="fBZ-JU-bJe"/>
+                        <constraint firstItem="8T4-bo-NEj" firstAttribute="top" secondItem="beq-qz-4hC" secondAttribute="bottom" constant="4" id="fbG-ZK-FOm"/>
+                        <constraint firstItem="c7G-C5-RSk" firstAttribute="leading" secondItem="aVz-ig-PML" secondAttribute="leading" id="fcf-LC-nic"/>
+                        <constraint firstItem="8T4-bo-NEj" firstAttribute="width" secondItem="c7G-C5-RSk" secondAttribute="width" id="rKO-l0-obL"/>
+                        <constraint firstItem="8T4-bo-NEj" firstAttribute="height" secondItem="aVz-ig-PML" secondAttribute="height" id="wEF-gK-aKR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT2-X4-eye">
+                    <rect key="frame" x="284" y="28" width="20" height="22"/>
+                    <state key="normal" image="logout.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="logoutButton:" destination="-1" eventType="touchUpInside" id="Cfg-qh-dQj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf3-u2-ikm">
+                    <rect key="frame" x="292" y="538" width="20" height="22"/>
+                    <state key="normal" image="setting_sideicon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_new.png" translatesAutoresizingMaskIntoConstraints="NO" id="qUZ-TR-JjM">
+                    <rect key="frame" x="151" y="119" width="111" height="59"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="lr7-qo-bSt">
+                    <rect key="frame" x="8" y="186" width="254" height="3"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="suit_case.png" translatesAutoresizingMaskIntoConstraints="NO" id="cze-NG-U3D">
+                    <rect key="frame" x="68" y="119" width="75" height="64"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.047058823529411764" green="0.10588235294117647" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="E5v-kI-yrn" secondAttribute="bottom" constant="37" id="CAJ-aq-Emd"/>
+                <constraint firstAttribute="trailing" secondItem="bf3-u2-ikm" secondAttribute="trailing" constant="8" id="F9B-Ka-sCQ"/>
+                <constraint firstAttribute="bottom" secondItem="bf3-u2-ikm" secondAttribute="bottom" constant="8" id="N6k-Jj-HZ5"/>
+                <constraint firstAttribute="trailing" secondItem="E5v-kI-yrn" secondAttribute="trailing" constant="32" id="nuX-0Y-f9j"/>
+                <constraint firstItem="E5v-kI-yrn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="42" id="wVw-TD-X6O"/>
+            </constraints>
+            <point key="canvasLocation" x="308" y="271"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Accounts_logo.png" width="186" height="185"/>
+        <image name="Contacts_logo.png" width="186" height="185"/>
+        <image name="Opportunities.png" width="186" height="185"/>
+        <image name="Reports.png" width="183" height="187"/>
+        <image name="line.png" width="900" height="7"/>
+        <image name="logo_new.png" width="76" height="39"/>
+        <image name="logout.png" width="20" height="20"/>
+        <image name="setting_sideicon.png" width="20" height="20"/>
+        <image name="suit_case.png" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Example1.iPhone/Example1.iPhone.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Example1.iPhone/Views/DetailsCell.designer.cs">
+    <Files>
+      <File FileName="Example1.iPhone/Main.cs" Line="12" Column="1" />
+      <File FileName="Example1.iPhone/Views/DetailsCell.cs" Line="37" Column="18" />
+      <File FileName="Example1.iPhone/Views/FirstView.cs" Line="24" Column="69" />
+      <File FileName="Example1.Core/ViewModels/FirstViewModel.cs" Line="16" Column="27" />
+      <File FileName="Example1.Core/Services/ServiceHelper.cs" Line="6" Column="3" />
+      <File FileName="Example1.iPhone/Setup.cs" Line="8" Column="29" />
+      <File FileName="Example1.iPhone/Views/DetailsCell.designer.cs" Line="15" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

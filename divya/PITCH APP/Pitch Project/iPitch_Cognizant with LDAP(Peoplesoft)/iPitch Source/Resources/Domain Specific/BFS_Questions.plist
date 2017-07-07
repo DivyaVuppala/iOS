@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01.PERSONAL DATA</key>
+	<array>
+		<string>Completed application form signed by all applicants</string>
+		<string>Photocopy of passports and N.I.F. of all applicants (before completion)</string>
+		<string>Photocopy of valid Proof of Address (lastest utility bill, bank statement, council tax bill)</string>
+	</array>
+	<key>02.INCOME DETAILS EMPLOYED</key>
+	<array>
+		<string>Photocopy of last three payslips</string>
+		<string>Photocopy of latest P60</string>
+		<string>Letter from the employer stating basic annual salary any additional commissions or bonuses if applicable, years at work and type of contract (permanent/temporary). If less than 12 months in current employment, details of previous employment will also be required</string>
+		<string>Photocopy of last three months’ bank statements showing regular income and payment of all regularfinancial commitments</string>
+	</array>
+	<key>03.SELF EMPLOYED</key>
+	<array>
+		<string>Photocopy of last three years SA302 (self assessment tax calculation)</string>
+		<string>Photocopy of last three years company audit accounts (balance sheet / audited P&amp;L’s ), certified by a chartered accountant</string>
+		<string>Chartered accountant certificate, confirming last three years company net profit as well as customer ́s personal net income from business such as salary or dividens as apropiate .If six months have passed since last trading period, projection for current year is also required</string>
+		<string>Photocopy of last three months’ bank statements showing regular income and payment of all regular financial commitments</string>
+		<string>Statement of Worth (detailing all customer’s assets and liabilities, certified by a chartered accountant)</string>
+	</array>
+	<key>04.OTHER INCOME</key>
+	<array>
+		<string>Rental income: photocopy of last existing rental agreement plus last three months bank statements to show deposit of rent</string>
+		<string>Retirees: photocopy of last official certificate of annual state/ private pension plus last three months bank statements to show amounts deposited</string>
+		<string>Investment portfolio certificate</string>
+	</array>
+</dict>
+</plist>

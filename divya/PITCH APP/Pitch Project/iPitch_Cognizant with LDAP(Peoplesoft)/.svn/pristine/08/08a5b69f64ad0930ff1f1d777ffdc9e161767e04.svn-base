@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01.Proposed Insured</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>First Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Middle Initial</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Last Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Date of Birth</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Age</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Marital Status</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Income</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Phone Number</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Email Address</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+	</array>
+	<key>02.Spouse Details</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>First Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Middle Initial</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Last Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Date of Birth</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Age</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Income</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+	</array>
+	<key>03.Coverage Amount</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>$ 500,000</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>$ 1,000,000</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>$ 2,000,000</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>$ 3,000,000</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+	<key>04.Policy Terms</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>10 Year</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>20 Year</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>30 Year</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>40 Year</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Return of Premium (ROP)</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+	<key>05.Other Household Dependents</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Do you have any Dependants?</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>How Many?</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+	</array>
+	<key>06.Medical Qustionnaire</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Do You use Tobacco Products?</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Do you take any prescription or herbal remedy?</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+</dict>
+</plist>

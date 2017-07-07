@@ -1,0 +1,145 @@
+
+
+//Login Page
+
+"USER_NAME"="User ID";
+"PASSWORD"="Password";
+"LOGIN"="Login";
+
+//Common
+
+"MY_ACCOUNTS"="My Accounts";
+"MY_CUSTOMERS"="My Customers";
+"MY_OPPORTUNITIES"="My Opportunities";
+"MY_CALENDAR" = "My Calendar"; 
+"MY_DOCUMENTS" = "My Documents";
+"PRODUCTS"="Products";
+"SETTINGS" = "Settings";
+//Calendar
+
+"TO_DO_LIST"="To Do List";
+"DAY"="Day";
+"WEEK"="Week";
+"MONTH"="Month";
+
+//Appointments
+
+"PURPOSE_OF_MEETING"="Purpose Of Meeting";
+
+
+//Documents
+"RECENTLY_ADDED"="Recently Added";
+"MOST_VIEWED"="Most Viewed";
+"MY_PLAYLIST"="My Playlist";
+"CREATE_PLAYLIST"="Create Playlist";
+"SELECT_THIS_PAGE"="Select This Page";
+"DESELECT_THIS_PAGE"="DeSelect This Page";
+"SELECTED_PAGES"="Selected Pages";
+"GENERATE_PDF"="Generate PDF";
+"EDIT_PAGES"="Edit Pages";
+"DONE"="Done";
+"GENERATING_PDF"="Generating Pdf...";
+"PLEASE_WAIT"="Please Wait";
+"OK"="OK";
+"NO_PAGES_SELECTED"="No Pages Selected";
+"CANCEL"="Cancel";
+"SUCCESS"="Success";
+"PDF_GENERATED"="PDF Generated want to open Now??";
+"SEARCHING"="Searching...";
+"LOADING"="Loading...";
+"ADD_TO_EXISTING_PLAYLIST"="Add To Existing Playlist";
+"DELETE"="Delete";
+"SEND_EMAIL"="Send Email";
+"PLAYLIST_DOCUMENTS"="Playlist Documents";
+"SELECT_PLAYLIST_TO_ADD"="Select Playlist To Add";
+"NO_DOCS_IN_PLAYLIST"="No items in playlist add them by long pressing documents you like.";
+
+//Customers
+"ACTIVITIES"="Activities";
+"OPPORTUNITIES"="Opportunities";
+"SOCIAL_FEEDS"="Social Feeds";
+"RELATED_CUSTOMERS"="Related Customers";
+"UPCOMING_APPOINTMENTS"="Upcoming Appointments";
+"CUSTOMER_OVERVIEW"="Customer Overview";
+"CUSTOMER_DETAIL"="Customer Details";
+
+//Accounts
+"ACCOUNT_OVERVIEW"="Account Overview";
+"CONTACTS"="Contacts";
+"ACCOUNT_DETAIL"="Account Details";
+
+//Opportunities
+"OPP_OVERVIEW"="Opportunity Detail";
+"DESCRIPTION"="Description";
+"STATUS"="Status";
+"PROBABILITY"="Probability";
+"DEAL_SIZE"="Deal Size";
+"DEBT"="Debt";
+"EQUITY"="Equity";
+"RISK_TOLERNACE"="Risk Tolerance";
+"LIQUIDITY_SCORE"="Liquidity Score";
+"INVESTMENT_ACUMEN"="Investment Acumen";
+"OPPORTUNITY_DETAIL"="Opportunity Details";
+
+//Settings
+"LOGIN_TO_ZOHO"="Login To Zoho";
+"ALERT"="Alert";
+"FIELDS_CANNOT_BE_EMPTY"="Fields Cannot Be Empty";
+"CURRENT_ZOHO_ACCOUNT"="Current Zoho Account";
+"ZOHO_GENERAL_SETTINGS"="Zoho General Settings";
+"CURRENT_BOX_ACCOUNT"="Current Box Account";
+"BOX_SETTINGS"="Box Settings";
+"THEME"="Theme";
+"CURRENT_DOMAIN"="Current Domain";
+"CRM"="01.CRM";
+"CONTENT_MANAGEMENT"="02.Content Management";
+"DOMAIN_SETTINGS"="03.Domain Settings";
+"CHANGE_COLOR_THEME"="04.Change Color Theme";
+"APPLY_THEME_1"="Apply Theme 1";
+"APPLY_THEME_2"="Apply Theme 2";
+
+"PROCEED"="Proceed";
+"FINISH"="Finish";
+"ADD_NEW_EVENT"="Add New Event";
+"TO_DO_TITLE"="To Do Title:";
+"SUBJECT"="Subject:";
+"SELECT_DUE_DATE"="Select Due Date :";
+"INTEGRATE_TO"="Integrate To";
+"CRM_AND_TODO"="CRM & To Do List";
+"CLOSE"="Close";
+"TO_DO_DETAILS"="To Do Details";
+"DATE"="Date";
+"TITLE"="Title";
+"SUBJECT"="Subject";
+"ONLY_CALENDAR"="Only Calendar";
+"CRM_AND_CALENDAR"="CRM & Calendar";
+"ADDING_EVENT_TO_CRM"="Adding event to CRM...";
+"RE_SCHEDULE"="Re-Schedule";
+"ADD_NOTES"="Add Notes";
+"REMIND_ME"="Remind Me";
+"DOCUMENTS"="Documents";
+"PRODUCTS"="Products";
+"RECENT_ACTIVITIES"="Recent Activities";
+"START_TIME"="Start Time";
+"END_TIME"="End Time";
+"VENUE"="Venue";
+"ADD_DOCUMENTS"="Add Documents";
+"SEND_INVITES"="Send Invite(s)";
+"SAVE"="Save";
+
+"LOGOUT"="Logout";
+"ADDING_NOTES"="Adding Notes...";
+"DELETING_NOTE"="Deleting Note...";
+
+"CONFIRM"="Confirm";
+"DELETE_NOTE_MESSAGE"="Are you sure, you want to delete this note?";
+"NO"="No";
+"YES"="Yes";
+"LOGOUT_MESSAGE"="You will have to logout now";
+
+"PERSONAL"="Personal";
+"MY_LEADS"="My Leads";
+"LEAD_DETAILS"="Lead Details";
+"LEAD_OVERVIEW"="Lead Overview";
+"ADD_TO_DO_ITEM"="Add To Do Item";
+"CLICK_TO_CHANGE_DATE"="Click To Change Date";

@@ -1,0 +1,136 @@
+/*
+ Localizable.strings
+ AppStoreVIP
+ 
+ Created by admin on 6/27/12.
+ Copyright (c) 2012 Cognizant Technology Solutions. All rights reserved.
+ */
+
+
+//Login Page
+
+"USER_NAME"="Identifiant Utilisateur";
+"PASSWORD"="Mot De Passe";
+"LOGIN"="Login";
+
+
+//Common
+
+"MY_ACCOUNTS"="Mes Comptes";
+"MY_CUSTOMERS"="Mes Clients";
+"MY_OPPORTUNITIES"="Mes Chances";
+"MY_CALENDAR" = "Mon Agenda";
+"MY_DOCUMENTS" = "Mes Documents";
+"SETTINGS" = "Réglages";
+
+//Calendar
+
+"TO_DO_LIST"="To Do List";
+"DAY"="Jour";
+"WEEK"="Semaine";
+"MONTH"="Mois";
+
+//Appointments
+
+"PURPOSE_OF_MEETING"="Objet De La Réunion";
+
+//Documents
+
+"RECENTLY_ADDED"="Récemment Ajouté";
+"MOST_VIEWED"="Meilleurs Affichages";
+"MY_PLAYLIST"="Ma Playlist";
+"CREATE_PLAYLIST"="Créer Une Playlist";
+"SELECT_THIS_PAGE"="Sélectionner Cette Page";
+"DESELECT_THIS_PAGE"="Désélectionnez Cette Page";
+"SELECTED_PAGES"="Pages Sélectionnées";
+"GENERATE_PDF"="Générer Un PDF";
+"EDIT_PAGES"="Modifier Les Pages";
+"DONE"="Fini";
+"GENERATING_PDF"="Génération Pdf...";
+"PLEASE_WAIT"="Attendez s'il Vous Plaît";
+"OK"="Bien";
+"NO_PAGES_SELECTED"="Pas Pages Sélectionnées";
+"CANCEL"="Annuler";
+"SUCCESS"="Succès";
+"PDF_GENERATED"="PDF Généré Voulez Ouvrir Maintenant??";
+"SEARCHING"="Recherche...";
+"LOADING"="Chargement...";
+"ADD_TO_EXISTING_PLAYLIST"="Ajouter à Une Playlist Existante";
+"DELETE"="Effacer";
+"SEND_EMAIL"="Envoyer un email";
+"PLAYLIST_DOCUMENTS"="Documents Playlist";
+"SELECT_PLAYLIST_TO_ADD"="Sélectionnez Playlist Pour Ajouter";
+"NO_DOCS_IN_PLAYLIST"="Pas d'articles dans les Ajouter en playlist de longs Documents urgents que vous aimez.";
+
+//Customers
+"ACTIVITIES"="Activités";
+"OPPORTUNITIES"="Opportunités";
+"SOCIAL_FEEDS"="Flux Sociaux";
+"RELATED_CUSTOMERS"="Les Clients Associés";
+"UPCOMING_APPOINTMENTS"="Rendez-vous à Venir";
+"CUSTOMER_OVERVIEW"="Vue d'Ensemble Des Clients";
+"CUSTOMER_DETAIL"="Détails du client";
+
+//Accounts
+"ACCOUNT_OVERVIEW"="Aperçu du Compte";
+"CONTACTS"="Contacts";
+"ACCOUNT_DETAIL"="Détails du compte";
+
+//Opportunities
+"OPP_OVERVIEW"="Détails de l'opportunité";
+"DESCRIPTION"="Description";
+"STATUS"="Statut";
+"PROBABILITY"="Probabilité";
+"DEAL_SIZE"="Taille Accord";
+"DEBT"="Dette";
+"EQUITY"="équité";
+"RISK_TOLERNACE"="Tolérance au Risque";
+"LIQUIDITY_SCORE"="Score de Liquidité";
+"INVESTMENT_ACUMEN"="Acumen Investissement";
+"OPPORTUNITY_DETAIL"="Détails concernant la possibilité";
+
+//Settings
+"LOGIN_TO_ZOHO"="Connexion Pour Zoho";
+"ALERT"="Alerter";
+"FIELDS_CANNOT_BE_EMPTY"="Les Champs ne Peut être Vide";
+"CURRENT_ZOHO_ACCOUNT"="Compte Courant Zoho";
+"ZOHO_GENERAL_SETTINGS"="Zoho Paramètres Généraux";
+"CURRENT_BOX_ACCOUNT"="Compte Courant Box";
+"BOX_SETTINGS"="Box Réglages";
+"THEME"="Thème";
+"CURRENT_DOMAIN"="Domaine Actuel";
+"CRM"="01.CRM";
+"CONTENT_MANAGEMENT"="02.Gestion de Contenu";
+"DOMAIN_SETTINGS"="03.Paramètres du Domaine";
+"CHANGE_COLOR_THEME"="04.Changer de Thème de Couleur";
+"APPLY_THEME_1"="Appliquer Thème 1";
+"APPLY_THEME_2"="Appliquer Thème 2";
+
+"PROCEED"="Procéder";
+"FINISH"="Terminer";
+"ADD_NEW_EVENT"="Ajouter un Nouvel événement";
+"TO_DO_TITLE"="To Do Titre:";
+"SUBJECT"="Sujet:";
+"SELECT_DATE"="Sélectionnez Date :";
+"INTEGRATE_TO"="Pour Intégrer";
+"CRM_AND_TODO"="CRM & To Do List";
+"CLOSE"="Fermer";
+"TO_DO_DETAILS"="Tâche Détaillée";
+"DATE"="Date";
+"TITLE"="Titre";
+"SUBJECT"="Sujet";
+"ONLY_CALENDAR"="Seulement Calendrier";
+"CRM_AND_CALENDAR"="CRM & Calendrier";
+"ADDING_EVENT_TO_CRM"="Ajout d'événement pour CRM...";
+"RE_SCHEDULE"="Re-annexe";
+"ADD_NOTES"="Ajouter des Notes";
+"REMIND_ME"="Remind Me";
+"DOCUMENTS"="Documents";
+"PRODUCTS"="Produits";
+"RECENT_ACTIVITIES"="Activités Récentes";
+"START_TIME"="Heure de début";
+"END_TIME"="Heure de fin";
+"VENUE"="Lieu";
+"ADD_DOCUMENTS"="Ajouter Des Documents";
+"SEND_INVITES"="Envoyer une invitation(s)";
+"SAVE"="Sauver";

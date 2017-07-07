@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>06.How would a decline in the value of your investments affect you?</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>I am not willing to accept declines in the value of my investment as capital preservation is my primary objective.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>I am willing to accept some declines, but I am not comfortable with moderate to extreme drops in the value of my investments.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>I am willing to accept moderate declines, but I am not comfortable with extreme drops in the value of my investments.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>I am prepared to take losses and large fluctuations in the value of my investments in order to maximize my long term returns.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+	<key>05.Will you require the ability to access your investment for the purpose of withdrawing cash?</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>I will need to withdraw more than 75% of my investments in the next 12 months.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>I will need to withdraw more than 50% of my Investments in the next two to three years.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>I will need to withdraw more than 25% of my investments in the next three to five years.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>I do not need to withdraw my investments to meet my liquidity needs.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+	<key>04.What is your investment objective and risk tolerance?</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>My sole objective is to protect the value of my capital. Time Deposits are one example of products that might meet this investment objective.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>My objective is to achieve investment returns above deposit rates. Government bonds are one example of products that might meet this investment objective.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>My objective is to achieve low to moderate capital growth on my investments. Investment- grade corporate bonds are one example of products that might meet this investment objective.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>My objective is to achieve moderate to high capital growth on my investments. Equity Mutual Funds are one example of products that might meet this investment objective.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>My objective is to achieve substantial capital growth on my investments. Equities are one example of products that might meet this investment objective.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>My objective is to achieve exceptional capital growth on my investments. Equity Futures and Options or Currency Futures and options (Exchange traded), is one example of products that might meet this investment objective.</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+	<key>02.Tell us about yourself</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>I am above the retirement age</string>
+			<key>Type</key>
+			<string>Switch</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>My highest level of education is</string>
+			<key>Type</key>
+			<string>Segment</string>
+			<key>Values</key>
+			<array>
+				<string>Primary</string>
+				<string>Secondary</string>
+				<string>University</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>I rely on the majority of my investments to fund my basic living expenses</string>
+			<key>Type</key>
+			<string>Switch</string>
+		</dict>
+	</array>
+	<key>01.Customer Investment Profile</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Customer Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>PAN No:</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Customer Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+	</array>
+	<key>03.What is your current financial position</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>My estimated annual income is</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>My Total Net worth</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+	</array>
+</dict>
+</plist>

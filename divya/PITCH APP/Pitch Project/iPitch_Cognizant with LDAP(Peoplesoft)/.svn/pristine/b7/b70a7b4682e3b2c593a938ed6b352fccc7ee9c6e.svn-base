@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01.Review Client</key>
+	<dict/>
+	<key>02.CISP</key>
+	<dict/>
+	<key>03.Suitability Analysis</key>
+	<dict/>
+	<key>04.Investment Recommendation</key>
+	<dict/>
+	<key>05.KYC Review</key>
+	<dict/>
+	<key>06.Sign Up</key>
+	<dict/>
+</dict>
+</plist>

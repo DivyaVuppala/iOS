@@ -1,0 +1,1332 @@
+Received: from CTSINCHNSXMBN.cts.com ([fe80::9c63:a3a:3d0b:57d6]) by
+ CTSINCHNSXHUB.cts.com ([fe80::c9e7:f44c:24d7:b419%11]) with mapi id
+ 14.03.0224.002; Wed, 6 May 2015 17:18:51 +0530
+From: "R, Rajesh (Cognizant - Mobility)" <Rajesh.R3@cognizant.com>
+To: "Ganesan, Varun(Cognizant)" <Varun.Ganesan@cognizant.com>, "Kanuparti,
+ Vijaya Bhaskara Reddy (Cognizant)"
+	<VijayaBhaskaraReddy.Kanuparti@cognizant.com>
+CC: "Darbha, Shweta (Cognizant)" <Shweta.Darbha@cognizant.com>, "Mishra,
+ Anubhab (Cognizant)" <Anubhab.Mishra@cognizant.com>, "Y, RAGHAVENDER
+ (Cognizant)" <RAGHAVENDER.Y@cognizant.com>
+Subject: RE: Pitch Peoplesoft Mobile assets
+Thread-Topic: Pitch Peoplesoft Mobile assets
+Thread-Index:
+ AdCBjpq+L+r1abUZR0qSxbEWkbuW1wEnX78AAACqUvAAAhkPAAAADnBQAABx9YAAA6xo0AACrazgAAGc/pAAYGkzkAAFm63QAAAOkhAAAEUn8A==
+Date: Wed, 6 May 2015 17:18:50 +0530
+Message-ID: <FBB667C9A1AF504ABDD5F575D71D7E104832C32E@CTSINCHNSXMBN.cts.com>
+References: <7BDCFBDB7F46844F961C8F53D1B8EF0727988DE9@CTSINCHNSXMBJ.cts.com>
+ <2351756E303FBC4A8B64C3FE159C42A90FF2E326@CTSINCHNSXMBI.cts.com>
+ <FBB667C9A1AF504ABDD5F575D71D7E104832BF1D@CTSINCHNSXMBN.cts.com>
+ <2351756E303FBC4A8B64C3FE159C42A90FF2E3F2@CTSINCHNSXMBI.cts.com>
+ <FBB667C9A1AF504ABDD5F575D71D7E104832BF73@CTSINCHNSXMBN.cts.com>
+ <D16D17E6.41C9%raghavender.y@cognizant.com>
+ <FBB667C9A1AF504ABDD5F575D71D7E104832C021@CTSINCHNSXMBN.cts.com>
+ <2351756E303FBC4A8B64C3FE159C42A90FF2E680@CTSINCHNSXMBI.cts.com>
+ <FBB667C9A1AF504ABDD5F575D71D7E104832C083@CTSINCHNSXMBN.cts.com>
+ <2351756E303FBC4A8B64C3FE159C42A90FF3041C@CTSINCHNSXMBI.cts.com>
+ <FBB667C9A1AF504ABDD5F575D71D7E104832C30A@CTSINCHNSXMBN.cts.com>
+ <7BDCFBDB7F46844F961C8F53D1B8EF072798B2B6@CTSINCHNSXMBJ.cts.com>
+In-Reply-To: <7BDCFBDB7F46844F961C8F53D1B8EF072798B2B6@CTSINCHNSXMBJ.cts.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: CTSINCHNSXHUB.cts.com
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+Content-Type: multipart/mixed;
+	boundary="_004_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_"
+MIME-Version: 1.0
+
+--_004_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_
+Content-Type: multipart/alternative;
+	boundary="_000_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_"
+
+--_000_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_
+Content-Type: text/plain; charset="us-ascii"
+
+Hi Varun
+I removed the user pic in the side menu page, let me know is this fine.
+
+Thanks
+Rajesh
+
+From: Ganesan, Varun(Cognizant)
+Sent: Wednesday, May 06, 2015 5:11 PM
+To: R, Rajesh (Cognizant - Mobility); Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Cc: Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Hi Rajesh,
+
+Pls remove the photo option, logged in user details etc.
+We will stick to what is in the iPad version.  The menu will have only the options to the various modules.
+
+Regards,
+Varun
+Cognizant<mailto:varun.ganesan@cognizant.com> Mobility Products || Vnet : 518198
+
+From: R, Rajesh (Cognizant - Mobility)
+Sent: Wednesday, May 06, 2015 5:09 PM
+To: Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Cc: Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant); Ganesan, Varun(Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Hi Vijay
+
+PFA VD's for Login Screen / Side Menu & Settings screen. Once the screen is approved will share the UI images to the development team.
+
+Thanks
+Rajesh
+
+From: Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Sent: Wednesday, May 06, 2015 2:29 PM
+To: R, Rajesh (Cognizant - Mobility)
+Cc: Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant); Ganesan, Varun(Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Rajesh,
+
+Can we have the below assets.
+
+*         Login screen
+
+*         Side menu
+
+*         Sync
+
+*         Settings
+
+Thanks,
+Vijay
+Manager - Mobility
+Email: VijayabhaskaraReddy.Kanuparti@Cognizant.com<mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com>
+Vnet: 688842 | Direct: 91-40-44518842 | Mobile: 8008188114
+
+From: R, Rajesh (Cognizant - Mobility)
+Sent: Monday, May 04, 2015 4:28 PM
+To: Kanuparti, Vijaya Bhaskara Reddy (Cognizant); Ganesan, Varun(Cognizant)
+Cc: Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Hi PFA
+UI Images for Iphone 6 & 6+
+
+Thanks
+Rajesh
+
+From: Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Sent: Monday, May 04, 2015 3:52 PM
+To: R, Rajesh (Cognizant - Mobility); Ganesan, Varun(Cognizant)
+Cc: Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Rajesh,
+
+As discussed we need to get the below ones as well.
+
+*         Login screen
+
+*         Side menu
+
+*         Sync
+
+*         Settings
+
+Also 3x images for all the assets for iPhone 6, 6+.
+
+Thanks,
+Vijay
+Manager - Mobility
+Email: VijayabhaskaraReddy.Kanuparti@Cognizant.com<mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com>
+Vnet: 688842 | Direct: 91-40-44518842 | Mobile: 8008188114
+
+From: R, Rajesh (Cognizant - Mobility)
+Sent: Monday, May 04, 2015 2:25 PM
+To: Y, RAGHAVENDER (Cognizant)
+Cc: Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Kanuparti, Vijaya Bhaskara Reddy (Cognizant); Mishra, Anubhab (Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Hi Raghav
+
+PFA - Styleguide for Pitch mobile Ios.
+
+Thanks
+Rajesh
+
+From: Y, RAGHAVENDER (Cognizant)
+Sent: Monday, May 04, 2015 12:39 PM
+To: R, Rajesh (Cognizant - Mobility)
+Cc: Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Kanuparti, Vijaya Bhaskara Reddy (Cognizant); Mishra, Anubhab (Cognizant)
+Subject: Re: Pitch Peoplesoft Mobile assets
+
+Hi Rajesh,
+
+The attached VD we have currently. Can you please check whether we are referring correct one or not.
+
+Regards,
+Raghavender.Y
+
+From: "R, Rajesh (Cognizant - Mobility)" <Rajesh.R3@cognizant.com<mailto:Rajesh.R3@cognizant.com>>
+Date: Monday, May 4, 2015 at 12:27 PM
+To: "Kanuparti, Vijaya Bhaskara Reddy (Cognizant)" <VijayaBhaskaraReddy.Kanuparti@cognizant.com<mailto:VijayaBhaskaraReddy.Kanuparti@cognizant.com>>, PCAdmin <raghavender.y@cognizant.com<mailto:raghavender.y@cognizant.com>>, "Mishra, Anubhab (Cognizant)" <Anubhab.Mishra@cognizant.com<mailto:Anubhab.Mishra@cognizant.com>>
+Cc: "Darbha, Shweta (Cognizant)" <Shweta.Darbha@cognizant.com<mailto:Shweta.Darbha@cognizant.com>>, "Ganesan, Varun(Cognizant)" <Varun.Ganesan@cognizant.com<mailto:Varun.Ganesan@cognizant.com>>
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Ya Vijay, those images need to be transparent only, If we place the color at background it will be visible.
+
+Thanks
+Rajesh
+
+From: Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Sent: Monday, May 04, 2015 12:25 PM
+To: R, Rajesh (Cognizant - Mobility); Y, RAGHAVENDER (Cognizant); Mishra, Anubhab (Cognizant)
+Cc: Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Rajesh,
+
+Lot of the images are very transparent and finding it really tough to locate and I believe they are expected to be transparent.
+
+Raghu/Anubhab,
+Pls check if we have all the images and confirm.
+
+Thanks,
+Vijay
+Manager - Mobility
+Email:VijayabhaskaraReddy.Kanuparti@Cognizant.com<mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com>
+Vnet: 688842 | Direct: 91-40-44518842 | Mobile: 8008188114
+
+From: R, Rajesh (Cognizant - Mobility)
+Sent: Monday, May 04, 2015 11:28 AM
+To: Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Cc: Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Y, RAGHAVENDER (Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+PFA UI Images for Pitch mobile.
+
+Thanks
+Rajesh
+
+From: Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Sent: Monday, May 04, 2015 11:05 AM
+To: R, Rajesh (Cognizant - Mobility)
+Cc: Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Y, RAGHAVENDER (Cognizant)
+Subject: RE: Pitch Peoplesoft Mobile assets
+
+Hi Rajesh,
+
+Hope you have completed the mobile version of assets and ready for delivery. Please confirm.
+
+Thanks,
+Vijay
+Manager - Mobility
+Email:VijayabhaskaraReddy.Kanuparti@Cognizant.com<mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com>
+Vnet: 688842 | Direct: 91-40-44518842 | Mobile: 8008188114
+
+From: Ganesan, Varun(Cognizant)
+Sent: Tuesday, April 28, 2015 2:09 PM
+To: Y, RAGHAVENDER (Cognizant); Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+Cc: Darbha, Shweta (Cognizant); R, Rajesh (Cognizant - Mobility)
+Subject: Pitch Peoplesoft Mobile assets
+
+Hi Raghav, Vijay,
+
+Have discussed with Rajesh.
+The assets and style guide for the mobile version will be delivered by Thursday.
+
+@Raghav,
+In case there is a priority, let Rajesh know and we can see if some assets can be given tomorrow.
+
+Regards,
+Varun
+Cognizant<mailto:varun.ganesan@cognizant.com> Mobility Products || Vnet : 518198
+
+
+--_000_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle26
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle27
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle28
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle29
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle30
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle31
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:477694897;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2099826372 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="blue" vlink="purple">
+<div class="WordSection1">
+<p class="MsoNormal"><span style="color:#1F497D">Hi Varun<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">I removed the user pic in the side menu page, let me know is this fine.
+<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><b><span style="font-size:9.0pt;color:#262626">Thanks <o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#262626">Rajesh<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Ganesan, Varun(Cognizant)
+<br>
+<b>Sent:</b> Wednesday, May 06, 2015 5:11 PM<br>
+<b>To:</b> R, Rajesh (Cognizant - Mobility); Kanuparti, Vijaya Bhaskara Reddy (Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span style="color:#1F497D">Hi Rajesh,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Pls remove the photo option, logged in user details etc.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">We will stick to what is in the iPad version.&nbsp; The menu will have only the options to the various modules.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><span style="color:#1F497D">Regards,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Varun<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#A6A6A6"><a href="mailto:varun.ganesan@cognizant.com"><span style="color:#A6A6A6;text-decoration:none">Cognizant</span></a> Mobility Products || Vnet : 518198<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> R, Rajesh (Cognizant - Mobility)
+<br>
+<b>Sent:</b> Wednesday, May 06, 2015 5:09 PM<br>
+<b>To:</b> Kanuparti, Vijaya Bhaskara Reddy (Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant); Ganesan, Varun(Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span style="color:#1F497D">Hi Vijay<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">PFA VD&#8217;s for Login Screen / Side Menu &amp; Settings screen. Once the screen is approved will share the UI images to the development team.
+<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><b><span style="font-size:9.0pt;color:#262626">Thanks <o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#262626">Rajesh<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+<br>
+<b>Sent:</b> Wednesday, May 06, 2015 2:29 PM<br>
+<b>To:</b> R, Rajesh (Cognizant - Mobility)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant); Ganesan, Varun(Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">Rajesh</span></b><span style="color:#1F497D">,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Can we have the below assets.<o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Login screen<o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Side menu<o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Sync <o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Settings <o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><span style="color:#1F497D">Thanks,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Vijay<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Manager - Mobility<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Email:</span><span style="color:#1F497D">
+<a href="mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com">VijayabhaskaraReddy.Kanuparti@Cognizant.com</a><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Vnet:</span><span style="color:#1F497D"> 688842 |
+</span><span style="color:#002060">Direct:</span><span style="color:#1F497D"> 91-40-44518842 |
+</span><span style="color:#002060">Mobile:</span><span style="color:#1F497D"> 8008188114<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> R, Rajesh (Cognizant - Mobility)
+<br>
+<b>Sent:</b> Monday, May 04, 2015 4:28 PM<br>
+<b>To:</b> Kanuparti, Vijaya Bhaskara Reddy (Cognizant); Ganesan, Varun(Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span style="color:#1F497D">Hi PFA <o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">UI Images for Iphone 6 &amp; 6&#43;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><b><span style="font-size:9.0pt;color:#262626">Thanks <o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#262626">Rajesh<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+<br>
+<b>Sent:</b> Monday, May 04, 2015 3:52 PM<br>
+<b>To:</b> R, Rajesh (Cognizant - Mobility); Ganesan, Varun(Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Mishra, Anubhab (Cognizant); Y, RAGHAVENDER (Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">Rajesh,<o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">As discussed we need to get the below ones as well.
+<o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Login screen<o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Side menu<o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Sync <o:p></o:p></span></p>
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo2"><![if !supportLists]><span style="font-family:Symbol;color:#1F497D"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style="color:#1F497D">Settings <o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Also 3x images for all the assets for iPhone 6, 6&#43;.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><span style="color:#1F497D">Thanks,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Vijay<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Manager - Mobility<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Email:</span><span style="color:#1F497D">
+<a href="mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com">VijayabhaskaraReddy.Kanuparti@Cognizant.com</a><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Vnet:</span><span style="color:#1F497D"> 688842 |
+</span><span style="color:#002060">Direct:</span><span style="color:#1F497D"> 91-40-44518842 |
+</span><span style="color:#002060">Mobile:</span><span style="color:#1F497D"> 8008188114<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> R, Rajesh (Cognizant - Mobility)
+<br>
+<b>Sent:</b> Monday, May 04, 2015 2:25 PM<br>
+<b>To:</b> Y, RAGHAVENDER (Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Kanuparti, Vijaya Bhaskara Reddy (Cognizant); Mishra, Anubhab (Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span style="color:#1F497D">Hi Raghav<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">PFA &#8211; Styleguide for Pitch mobile Ios.
+<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<p class="MsoNormal"><b><span style="font-size:9.0pt;color:#262626">Thanks <o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#262626">Rajesh<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Y, RAGHAVENDER (Cognizant)
+<br>
+<b>Sent:</b> Monday, May 04, 2015 12:39 PM<br>
+<b>To:</b> R, Rajesh (Cognizant - Mobility)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Kanuparti, Vijaya Bhaskara Reddy (Cognizant); Mishra, Anubhab (Cognizant)<br>
+<b>Subject:</b> Re: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black">Hi Rajesh,<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black">The attached VD we have currently. Can you please check whether we are referring correct one or not.<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black">Regards,<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black">Raghavender.Y<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="color:black">From: </span></b><span style="color:black">&quot;R, Rajesh (Cognizant - Mobility)&quot; &lt;<a href="mailto:Rajesh.R3@cognizant.com">Rajesh.R3@cognizant.com</a>&gt;<br>
+<b>Date: </b>Monday, May 4, 2015 at 12:27 PM<br>
+<b>To: </b>&quot;Kanuparti, Vijaya Bhaskara Reddy (Cognizant)&quot; &lt;<a href="mailto:VijayaBhaskaraReddy.Kanuparti@cognizant.com">VijayaBhaskaraReddy.Kanuparti@cognizant.com</a>&gt;, PCAdmin &lt;<a href="mailto:raghavender.y@cognizant.com">raghavender.y@cognizant.com</a>&gt;,
+ &quot;Mishra, Anubhab (Cognizant)&quot; &lt;<a href="mailto:Anubhab.Mishra@cognizant.com">Anubhab.Mishra@cognizant.com</a>&gt;<br>
+<b>Cc: </b>&quot;Darbha, Shweta (Cognizant)&quot; &lt;<a href="mailto:Shweta.Darbha@cognizant.com">Shweta.Darbha@cognizant.com</a>&gt;, &quot;Ganesan, Varun(Cognizant)&quot; &lt;<a href="mailto:Varun.Ganesan@cognizant.com">Varun.Ganesan@cognizant.com</a>&gt;<br>
+<b>Subject: </b>RE: Pitch Peoplesoft Mobile assets<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span style="font-size:10.5pt;color:black"><o:p>&nbsp;</o:p></span></p>
+</div>
+<div>
+<div>
+<p class="MsoNormal"><span style="color:#1F497D">Ya Vijay, those images need to be transparent only, If we place the color at background it will be visible.
+</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<p class="MsoNormal"><b><span style="font-size:9.0pt;color:#262626">Thanks </span>
+</b><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#262626">Rajesh</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black"> Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+<br>
+<b>Sent:</b> Monday, May 04, 2015 12:25 PM<br>
+<b>To:</b> R, Rajesh (Cognizant - Mobility); Y, RAGHAVENDER (Cognizant); Mishra, Anubhab (Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Rajesh,</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Lot of the images are very transparent and finding it really tough to locate and I believe they are expected to be transparent.</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Raghu/Anubhab,</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Pls check if we have all the images and confirm.</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<p class="MsoNormal"><span style="color:#1F497D">Thanks,</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Vijay</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Manager - Mobility</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Email:</span><span style="color:#1F497D"><a href="mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com">VijayabhaskaraReddy.Kanuparti@Cognizant.com</a></span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Vnet:</span><span style="color:#1F497D"> 688842 |
+</span><span style="color:#002060">Direct:</span><span style="color:#1F497D"> 91-40-44518842 |
+</span><span style="color:#002060">Mobile:</span><span style="color:#1F497D"> 8008188114</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black"> R, Rajesh (Cognizant - Mobility)
+<br>
+<b>Sent:</b> Monday, May 04, 2015 11:28 AM<br>
+<b>To:</b> Kanuparti, Vijaya Bhaskara Reddy (Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Y, RAGHAVENDER (Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">PFA UI Images for Pitch mobile. </span>
+<span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<p class="MsoNormal"><b><span style="font-size:9.0pt;color:#262626">Thanks </span>
+</b><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#262626">Rajesh</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black"> Kanuparti, Vijaya Bhaskara Reddy (Cognizant)
+<br>
+<b>Sent:</b> Monday, May 04, 2015 11:05 AM<br>
+<b>To:</b> R, Rajesh (Cognizant - Mobility)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); Ganesan, Varun(Cognizant); Y, RAGHAVENDER (Cognizant)<br>
+<b>Subject:</b> RE: Pitch Peoplesoft Mobile assets</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><b><span style="color:#1F497D">Hi Rajesh,</span></b><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Hope you have completed the mobile version of assets and ready for delivery. Please confirm.</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<p class="MsoNormal"><span style="color:#1F497D">Thanks,</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Vijay</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#1F497D">Manager - Mobility</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Email:</span><span style="color:#1F497D"><a href="mailto:VijayabhaskaraReddy.Kanuparti@Cognizant.com">VijayabhaskaraReddy.Kanuparti@Cognizant.com</a></span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#002060">Vnet:</span><span style="color:#1F497D"> 688842 |
+</span><span style="color:#002060">Direct:</span><span style="color:#1F497D"> 91-40-44518842 |
+</span><span style="color:#002060">Mobile:</span><span style="color:#1F497D"> 8008188114</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><span style="color:#1F497D">&nbsp;</span><span style="color:black"><o:p></o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black"> Ganesan, Varun(Cognizant)
+<br>
+<b>Sent:</b> Tuesday, April 28, 2015 2:09 PM<br>
+<b>To:</b> Y, RAGHAVENDER (Cognizant); Kanuparti, Vijaya Bhaskara Reddy (Cognizant)<br>
+<b>Cc:</b> Darbha, Shweta (Cognizant); R, Rajesh (Cognizant - Mobility)<br>
+<b>Subject:</b> Pitch Peoplesoft Mobile assets</span><span style="color:black"><o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">Hi Raghav, Vijay,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">Have discussed with Rajesh.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">The assets and style guide for the mobile version will be delivered by Thursday.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">@Raghav,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">In case there is a priority, let Rajesh know and we can see if some assets can be given tomorrow.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">Regards,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">Varun<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:9.0pt;color:#A6A6A6"><a href="mailto:varun.ganesan@cognizant.com"><span style="color:#A6A6A6;text-decoration:none">Cognizant</span></a> Mobility Products || Vnet : 518198</span><span style="color:black"><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:black">&nbsp;<o:p></o:p></span></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_--
+
+--_004_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_
+Content-Type: image/jpeg; name="sidemenu_1.jpg"
+Content-Description: sidemenu_1.jpg
+Content-Disposition: attachment; filename="sidemenu_1.jpg"; size=35619;
+	creation-date="Wed, 06 May 2015 11:46:48 GMT";
+	modification-date="Wed, 06 May 2015 11:46:48 GMT"
+Content-Transfer-Encoding: base64
+
+/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QNvaHR0cDov
+L25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENl
+aGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4
+OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6
+NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5
+OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHht
+bG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0i
+aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1w
+PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9
+InhtcC5kaWQ6Njk5NDc0NjUwNkJDRTQxMTgzRUI5ODQ1QjY4MDkyRTIiIHhtcE1NOkRvY3VtZW50
+SUQ9InhtcC5kaWQ6OTQyNTVDNkVGM0U1MTFFNDlCRTY5OTMyNERGQzg4RDIiIHhtcE1NOkluc3Rh
+bmNlSUQ9InhtcC5paWQ6OTQyNTVDNkRGM0U1MTFFNDlCRTY5OTMyNERGQzg4RDIiIHhtcDpDcmVh
+dG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZy
+b20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3MzlFNUMzM0RGRjNFNDExOEI0QzhCMjlDQ0M2
+OTZGNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2OTk0NzQ2NTA2QkNFNDExODNFQjk4NDVC
+NjgwOTJFMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94
+cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwMBAQEBAQEBAgEBAgIC
+AQICAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA//AABEI
+AjgBQAMBEQACEQEDEQH/xADVAAEAAQQDAQEAAAAAAAAAAAAAAQIGCAkDBQcECgEBAAMAAwEBAAAA
+AAAAAAAAAAEGCAIEBQMHEAABAgUCAgUGCAkHCAYLAAABAAIRAwQFBhIHITFRodETCEFxsSIUFWEy
+U1TUlbY3kZLS05SkVYUWgUJSoiPVF7IzJDQlJlYJRGQ1RZZX8MFicoJDc5N0GBkRAAIBAgMEBwYF
+AwEGBQUBAAABAhEDIRIEMUFRBWGR0RODBjZxIrMUtAeBoeEyUrFCIxbBYoJTcxXw8cIzQ3KSomMk
+VP/aAAwDAQACEQMRAD8A/Nlz4Ba4MBHM6mqWz/ZXU89tUXtl+zOlTBP7x8NLO5Le81uiICETFRVU
+rXAnK65aPMGU9RMmmRLkTpk8F4Mlkp7poMoOMwGW1peDLDSXcOABilUlV7Ak26JOpTLkzpomGVKm
+TRJlmbNMtjniVKaQHTJhaDolguAJMBxSqW0JN7A2TOfLmTmypjpMosbNmtY4y5RmEiWJjwC1heQY
+RIjDglVWm8UdK7i7MPwHL8+qLjTYjZZ15m2miZcbl3dRR0sqioplXIoZdRUT66ppZEtkysqpctvr
+RL3gAcV8rt+1YSd2VKui6d+4++n0uo1TcdPHM4qr2KirTe1vLikbJ7qVF9ueNMwu6MvNntNHfbhS
+1L6KjlybLcZ1PT2+7MrauqkUFTbq6fVy2SZ0qa+XMc4BpJivm9ZpVBXM6yNtL2rauNUfZct1zuys
+q3LvIxTadFg9jq3Rp7mmW7fMBy/HPfPviyzqRuPTrNT3mayooquRb5+QyKypssqdUUVTUSC+4SKC
+c5ga50O7cDAhfSF+1cpklXNWnTTb1VPjd0mos5u8jTJSux0zVpse+jOiqLNdKW022+VFFOlWi8VV
+yorZXvDe4rKqzihdc5EkhxcX0TbnT64gf51sIrmpxc3BP30lVe2tP6M+Ttzjbjda/wAcm0nxapXq
+qus7XDsJy3cK/UmL4Tj11ye/1oe6RbLRSzKqf3UoAzqmeWgSqWjp2nVNnzXMkym8XuA4rjevWtPb
+d29JRtre/wDx+R9NPpr+ruqzpoSnde5f16FxbwR7XcPCTvnR0VXV0eOWPJai2yJlRdLJhed4NmeS
+22VJaXTjUY5jGRXS8zTJAOvuJM3T5YLpx5popNJylFPY5RlFP8ZJI9GfIuZxi5RhGbiquMJwnJe2
+MZN9SZja5rmOcx7XMexxa9jgWua5pg5rmmBa5pECDyXoHj7MHtIUgIAgCAIC+5u2OfysXxjM3Ypd
+nY3mtzuVnxO4SpLZ77/cbRD3jItlBJfMuVQ2mcS3vBJ7pz2ua1xcxwHwWpsO7KzmXeQSclwT2Vew
+7T0WqVmGoyS7m5JqL/k1totv5UO0wbZncrcinrKvD8b9vpaK60lhmVNdeLDj1PUZBXy5s2ix62zs
+julpl3fIKqVIc5lDSmdVuaAe74iPG/q9Pp2ldlRtVwTeC2t0Toul4HPTcu1msTlp4VipKNW4x957
+IrM1WXQqvoOtm7Xbh0+K3vNqvD75Q4pjt2pbFd73caJ9uo6a81dTVUUu2yvbfZ5tbWSqqjmS5zJD
+Zpp3ACbo1NjyWp07uxsqcXdkqpLHBb8P9u3ccHotWrEtTK3JWISUW2qJNtqmO11WNNm+hybfbWZx
+ulU3qmwm1UlydjtqF7vk+4ZBjeNUFrtRq6egFbV3PKLvZrdLle11ctn+d1ReOEOKi/qrOmSd5tZn
+RUTbb27IpsnS6LU61yjpop5I1lWUYpKtKtyaW18TC3enwieI27765bYbRttU3etfgjNzKObacjw+
+52q6YTjltx+zX29WS/UOQz7FfTbLtVS6ebTUdTPrBMe0d0Yhfg/m/U27vmPU3It5H3e1NP8A9qG5
+pNdRqb7faS9Z8naO1cS7xK63Rxkqd/ceDi2nhwZjVimyO6Wb7e55uri+JVN02/2y9iGb5IK+z0lN
+ZHXEgUjPZa+40twuUx+ppc2kk1DpQc0vDQ5sfAcopqL2stihJxckvdR5UuRwCAIAgCAIAgL8xrAL
+xkba4MMu3TZePtv1n94Qp6a+CZfrdj8mipKuY5slk+qrq/upRJ0me0S3adWocXJI5qLZZE6TOpp0
+2nqJUyRPkTJkmfJmsdLmyZ0pxZMlTZbwHMmS3tIcCAQRBcjiXta9sNxL1PwultOF5HcancWbWycF
+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
+7R9BTKunrYzvo6l2D3pU/JW76ntH0FMq6etjO+jqXYa+t35rp+8WWTXiW1zvcMRJkyaeWNON2Zo0
+yZDJcpnAcYNETxPErPnnhU80apf9P4Ns1n9s3XyRon/1vqLpbI5DzD0KqF7JQBAEAQBAEAQBAEAQ
+BAEAQBAEAQBAbGVrAweEB6jQ7Jbu3O00t9t+3GYVlmraCVdKS509krZtFU26dIFTKrZM9ssy300y
+ncHhwMC0xXWlrNLGThK5BTTpSq2ncjy7XTgrkbVx22qp0dKcTy5dk6YQBAEAQBAEAQBAEAQEEA/h
+B/lHEdaEUJQkIAgCAIAgMBt2vveyr9x/ZyzrPfnj1TqvD+DbNafbL0RofG+oulvDkPMPQqmXwlAE
+AQBAEAQBAEAQBAEAQBAEAQBAEBsZWsDB5BjD1YR8kYkdRB5IDbJtlbrhXjZ+U+mvTrZVYXtbJqai
+RQ5caE08zCrBLqCK2mxGqx9jASQ9xuDWNIOtzHBzW1fUSjHvf25lOf8AGv7n/vV/Iu2kjKXcKksj
+t290qftjvytf/l1Hm+d7E7L2KVmdut2G3eVWWNmYUVBd5m6uP1EwVVjwisymhuM3G+/N2ml1RJbK
+dRaBUBn9q4d0dS7FjW6ybhKU1SWWqyPfLK1XZ+OzdtOpqeW8vt95CNuSlHMk+8jug5J5dv4bd+w1
+uOmO0MgRqhLc8jkA4tEBzEXE/gCsBUnsBcRNOozQ3U0NgB3fEN4EkE8XcEBnpsz4Scc3H8OWX7jX
+rI8htW72QUu4d58PWE0ht/uXPLBsdR2S+buT7hTutdbda2rdabrPkWlsipoz7bbp+sTmQaK7rudX
+NLzSGlhGL0UXBXpY1g7tVbxqktibqng9zLpyryxZ5hyK5r7k5x5nNXJae2qUuRsZXdqqOTeLjGjj
+Rqrqjyqg8JG7NdtpTbk+34DSTbpgl33Pse3Vwzmx0u6mQbb2R9Wyvz2yYQ55ranHm+7qoydT2VVW
+ymmvkSZrJbnDty53o46r5alxpXFbc1F92pv+xy44quFFVVZ58PK/Mp6Ba5SsKcrLvRtO4u+laX/y
+Rt744OmNXTBF13jwJ792qZQWiiGC5Nm0694LjmRbaY3ndiue4m3t63Ff3WMUOeWB0yml2J9XPIlT
+iJ05tFMcPaTKaQ4/GHmLl0qzl3kLGWTjOUGoTUP3ZHv6lXdjgdi55M51CkLfcXNVmtxnajcTuWnc
+/b3kcFHpo3TbsxOC5+Cfd2hqLQ2zX7a7PbPeKjcS2jKsAz+2ZTjloyXa7AbvuXl2HX6vopDZttyW
+mxKxz6imlulGRWt0mTNew6xMOf6KUZO5G9bnFQeWcMsnGc1CMoquMczSeNVwONzyjzKE4RtXNNet
+zlcjnt3M8YztW5XZQk6VUskW0qUfHedTt/4QN2dx8LoNwbNVYLasSrcUvubzbzleY23GaK14vjGd
+0m3t/ul2qro2TS0jLdeasTe77x06dTMPcsmTjLkv56nnmj0uoelmrkr6ko0jHNWUoZ0lTF1WHt24
+VZw0PlXmWv0UeYWpWI6WUJTrOeXLGE+7k5Nqio8dv7VhV0T9LpfAtlrMH3SrrnluG/4g4hnWx2K4
+Pjdqyq3Vtq3Btu9NguuQ43fLJdPZhJr6LLKR9vFhnMmy5dVMl18ucJb6UhdWXmKz39lQhc+Wnbuy
+m3F1g7bSaarg44ua3Jxa2nft+TdR8rqXcu2vnbd2xG3FTWW4rybjJNrFTrFW2mk5KadMp4zvn4Zc
+62Bl0U7Kch26ySVPv95xK5/wHmFLkdRjGX4/Ioqm74vlFvdT0FztF2pZFfLe0ukup5zYulTXtgT3
+uX820/Mm42o3YNRUlnjlzRbopRdWmqrjXoPJ5x5d1vJYqeonYuRc3B93PNkmkm4TTSadHXZSm/ZX
+HVeqeCEAQBAEAQBAEBgNu1972VfuP7OWdZ788eqdV4fwbZrT7ZeiND431F0t4ch5h6FUy+EoAgCA
+IAgCAIAgCAIAgCAIAgCAIAgNjK1gYPCA2T4Vvjsjjdz2sFbP2yr7ZiWCY1aslv1VtZklZuLPy/Hb
+PMttJX2LIZllly5dspfZKESnTSJ7GSnhsPUArt7Ray5G7lVxSlNtLOsmVutGq7dvQW3T8x5dZnZz
+Oy4QtxUn3cnPNFUTUqbFRUriRnm8+y17Oa3e2blUk+svLcxuFvsx2Pt1NWzqm+YJWYtRW12XPtjL
+tJqxWTWzHXJ0wVDpR7h57kQSxo9ZDJCVt0WVN946YSrXLWn4bN+0jU8w5fc7ycLqcpZml3KrjBxS
+zUrt/u20w2GtMyGFobARAaNUOJDYfCOYCsVSpUJMsk/H9TU12mHH1YQAdHg0kR5IKdRsIxf/AJh+
+7G3d12Ot22VK7Ddptm8cw2wVu1TK+1XOhz59rrqi6bgXO+X+bitPWUNXubcbnWvqhIkkUrKgNaZp
+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
+XLGt0C0lmGvjatyTmndtxUmvenJ17x0TnGmZSUU6wTPJLX4b8M3DwilybI/C5L2M3bvth8WeLYNs
+7QztwpNRnTcF2OuGT7d5na8Vzi83TJ52SYznJl272inmNpLpVt1GQT6jO5Pml/TalWbWreo0UZae
+U7jy+5muJTi5RSWWUfeo8YrCu2vm2+RaXXaGWpv8vWk5pKGqhbsrP7+Sy5W5qE25Z4TpHMqKT96m
+KS7PbPbKq2Z2LvmMVPh7sd13WzrwIbg7g5pb8jsef1OaXGZSeK+x2uzWq4WSz5JZp1HQycIr7dXV
+UhtJLqpVRZ6VzpjZTKqXUcdZq467mCvLUyjo7fMLcItSioqtiTck2mq5k0nWlJPDFNc+XaCfKuU/
+Ly0duXMrvKr1yalCbnKmojlhJKUXTJKLlGmasI4qjT0nK/n5IEAQBAEAQBAEAQBAYFbs/e5lPnsX
+2esyzx569U6rw/g2zWv2y9D6HxvqLp0I5DzD0KpF8JQBAEAQBAEAQBAEAQBAEAQBAEAQBAbElrQw
+cUTAXMcG8z5IwjxERH4QhEsVgX/gW6WYbbtvVPjFTavYMglULb5YcixrG8tsF0faplRMtdVVWXKr
+VeLW6st0yrm9xUNlidKE14a4Ne4O69/TWtRR3E80djTcWq7cYtPHejs6XW39HmVhrLJKsZRjKLps
+dJJqqq6PasS/ZXid3SpDMn2iXttYLlLaWUt7xrZzajH75b3T2ukvn2q92rDaW52usbLe4Mn082XO
+lkxY5rgCPj/23TPCfeSjwlcm0/anKj9jR2VzrWxq7fcxmtjjatxarwajVPpTqeAOfMi+JaS0aiYO
+9aMT/S4HgePFd48xuWOzAkvdr0jSB6sA7m6PPSYgcAm6oq6l+W3dfdCyWuXZbNuNndps1Gw01LaL
+Zl+Q0Fsp5E55fNkyKCluMqlkypj5ziWtYGkuJI4ldWWi0VybuXLNqVx7W4Rb62qnft825pZt9zZ1
+F+NqOCirk0kuCSdDq353mcy32iz1WS3i5WDHKyTU2bHLxX1N5xugnSprJje4xy6zKyx9y53B8p1O
+6VNaS17XNJB5/K6dTlcjCMbs06ySSk6/7ypL8a1Pk9frXbjaldnLT25JxhJuUFTZ7kqxp0Uo9jVD
+ITeTxgbg7w4PT7ezcR2328xOVldFmFxt229qyi1NvN9tdBX22ymezIMvyeRZrJYZF5rHUVptDLba
+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
+
+--_004_FBB667C9A1AF504ABDD5F575D71D7E104832C32ECTSINCHNSXMBNct_--

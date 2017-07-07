@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Accounts" representedClassName="Accounts" syncable="YES">
+        <attribute name="acconuntPhoneNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountIndustry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountOwnerShip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountWebSite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="annualRevenue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favouriteStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mailingCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingZIP" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfEmployees" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentAccountId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eventsTaggedToAccount" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Events" inverseName="accountTaggedToEvent" inverseEntity="Events" syncable="YES"/>
+        <relationship name="notesTaggedToAccount" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" syncable="YES"/>
+        <relationship name="opportunitiesTaggedToAccount" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Opportunities" syncable="YES"/>
+    </entity>
+    <entity name="Analytics" representedClassName="IpitchAnalytics" syncable="YES">
+        <attribute name="appEvent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appView" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Customers" representedClassName="Customers" syncable="YES">
+        <attribute name="accountID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="accountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customerImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionAboutCustomer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favouriteStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedinID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingZIP" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skypeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitterID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eventsTaggedToCustomers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Events" inverseName="customersTaggedToEvent" inverseEntity="Events" syncable="YES"/>
+        <relationship name="notesTaggedToCustomer" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" syncable="YES"/>
+        <relationship name="opportunitiesTaggedToCustomers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Opportunities" syncable="YES"/>
+    </entity>
+    <entity name="Events" representedClassName="Events" syncable="YES">
+        <attribute name="eventDescType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventEndDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="eventID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventPurpose" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventStartDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="eventSyncStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="eventTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventVenue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedToAccountID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedToAccountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedToContactID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedToContactName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedToID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedToLeadName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedToPotentialID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="accountTaggedToEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Accounts" inverseName="eventsTaggedToAccount" inverseEntity="Accounts" syncable="YES"/>
+        <relationship name="customersTaggedToEvent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Customers" inverseName="eventsTaggedToCustomers" inverseEntity="Customers" syncable="YES"/>
+        <relationship name="filesTaggedToEvent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="File" syncable="YES"/>
+        <relationship name="leadsTaggedToEvent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Leads" inverseName="eventsTaggedToLead" inverseEntity="Leads" syncable="YES"/>
+        <relationship name="notesTaggedToEvent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" syncable="YES"/>
+    </entity>
+    <entity name="File" representedClassName="File" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Folder" representedClassName="Folder" syncable="YES">
+        <attribute name="folderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="folderPath" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Leads" representedClassName="Leads" syncable="YES">
+        <attribute name="annualRevenue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favouriteStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="leadCompany" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadEmailID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadFax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadIndustry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadLinkedInID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadMobileNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadOwner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadSalutation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadSkypeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadTwitterID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leadWebsite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mailingZIP" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfEmployees" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eventsTaggedToLead" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Events" inverseName="leadsTaggedToEvent" inverseEntity="Events" syncable="YES"/>
+        <relationship name="notesTaggedToLead" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" syncable="YES"/>
+    </entity>
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
+        <attribute name="isVoiceNotes" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="noteContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteCreationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="noteCreatorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteModifiedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="noteModifierName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteModule" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteRelatedToID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notesCRMSyncStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="noteTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Opportunities" representedClassName="Opportunities" syncable="YES">
+        <attribute name="favouriteStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="opportunityAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityClosingDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="opportunityDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityProbability" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityRelatedToAccountID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityRelatedToAccountName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityRelatedToContactID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityRelatedToContactName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityRevenue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityStage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opportunityType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eventsTaggedToOpportunity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Events" syncable="YES"/>
+        <relationship name="notesTaggedToOpportunity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" syncable="YES"/>
+    </entity>
+    <entity name="Playlist" representedClassName="Playlist" syncable="YES">
+        <attribute name="playlistName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="playListDocuments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="File" syncable="YES"/>
+    </entity>
+    <entity name="Tasks" representedClassName="Tasks" syncable="YES">
+        <attribute name="taskCompletionStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="taskDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskDueDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="taskID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskSubject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskSyncType" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="taskType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Accounts" positionX="-27" positionY="-27" width="173" height="345"/>
+        <element name="Analytics" positionX="160" positionY="-135" width="128" height="150"/>
+        <element name="Customers" positionX="-918" positionY="-72" width="180" height="390"/>
+        <element name="Events" positionX="-371" positionY="-306" width="146" height="360"/>
+        <element name="File" positionX="-191" positionY="-306" width="128" height="75"/>
+        <element name="Folder" positionX="9" positionY="-207" width="128" height="75"/>
+        <element name="Leads" positionX="-558" positionY="270" width="128" height="510"/>
+        <element name="Notes" positionX="-902" positionY="-306" width="128" height="210"/>
+        <element name="Opportunities" positionX="-648" positionY="-306" width="189" height="285"/>
+        <element name="Playlist" positionX="9" positionY="-306" width="128" height="75"/>
+        <element name="Tasks" positionX="162" positionY="-306" width="128" height="150"/>
+    </elements>
+</model>

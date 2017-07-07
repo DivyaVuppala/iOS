@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01.You (Primary)</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Date of Birth</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Cell</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>SSN</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Email</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Beneficiary</string>
+			<key>Type</key>
+			<string>Segment</string>
+			<key>Values</key>
+			<array>
+				<string>Primary</string>
+				<string>Secondary</string>
+			</array>
+		</dict>
+	</array>
+	<key>02.Your Spouse (Secondary)</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Name</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Date of Birth</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Cell</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>SSN</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Email</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Beneficiary</string>
+			<key>Type</key>
+			<string>Segment</string>
+			<key>Values</key>
+			<array>
+				<string>Primary</string>
+				<string>Secondary</string>
+			</array>
+		</dict>
+	</array>
+	<key>03. Address</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Line 1</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Line 2</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>City</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Zip</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+	</array>
+</dict>
+</plist>

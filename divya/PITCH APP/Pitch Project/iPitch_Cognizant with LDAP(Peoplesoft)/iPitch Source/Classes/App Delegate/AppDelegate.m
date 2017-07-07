@@ -1,0 +1,861 @@
+//
+//  AppDelegate.m
+//  iPitch V2
+//
+//  Created by Satheeshwaran on 1/24/13.
+//  Copyright (c) 2013 Cognizant. All rights reserved.
+//
+
+#import "AppDelegate.h"
+
+#import "LoginViewController.h"
+
+#import "Events.h"
+
+#import "ModelTrackingClass.h"
+
+#import "GLGestureRecognizer.h"
+
+#import "GLGestureRecognizer+JSONTemplates.h"
+
+#import "SSimpleCalculator.h"
+
+#import "Utils.h"
+
+#import "iPitchConstants.h"
+
+#import <CoreData/CoreData.h>
+
+#import "File.h"
+
+#import "Folder.h"
+
+#import "ThemeHelper.h"
+
+#import "NoteDetailViewController.h"
+
+#import "ShowAccountsViewController.h"
+
+//#import "LoginViewController_iPhone.h"
+
+@interface AppDelegate()
+{
+    GLGestureRecognizer *recognizer;
+    CGPoint center;
+	float score, angle;
+    BOOL appToggleStatus;
+}
+
+@end
+@implementation AppDelegate
+
+@synthesize window,viewController,selectedPages,postedTokenExpiredNotification ;
+
+@synthesize managedObjectContext = __managedObjectContext;
+@synthesize managedObjectModel = __managedObjectModel;
+@synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize notesArray;
+@synthesize revealStatus;
+@synthesize isLoadingOtherModuleData;
+@synthesize opportArray,acntArray;
+
+
+#pragma mark UIApplication Delegate Methods
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+   
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UINavigationController *navController=[[UINavigationController alloc]init];
+    
+    self.opportunitiesForAccounts=[[NSMutableDictionary alloc]init];
+    
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)                                                         forBarMetrics:UIBarMetricsDefault];
+//    
+    
+    if([[UIDevice currentDevice] userInterfaceIdiom]==UIUserInterfaceIdiomPhone)
+    {
+       
+        LoginViewController *lvc=[[LoginViewController alloc]initWithNibName:@"LoginViewController_iPhone" bundle:nil];
+        [navController pushViewController:lvc animated:YES];
+      
+    
+    }
+    else
+    {
+         self.viewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+        [navController pushViewController:self.viewController animated:YES];
+    }
+    
+    self.window.backgroundColor=[UIColor clearColor];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidTimeOut:) name:kApplicationDidTimeoutNotification object:nil];
+    
+    //creating DBSession object initially so that other classes can use it.
+    //[CTSDropBoxHelper createSession];
+    
+    //Zoho CRM authentication token parameterization
+    
+    if (![Utils userDefaultsGetObjectForKey:IPITCH_FIRST_RUN] )
+    {
+        
+        //Satheesh's key
+        
+       // [Utils userDefaultsSetObject:@"b550457a4ac70736e0fbc729c3d6c3f1" forKey:ZOHO_CRM_API_KEY];
+        
+        //demo key
+       [Utils userDefaultsSetObject:@"ca64bb3babdb3fa3439741f9651ea467" forKey:ZOHO_CRM_API_KEY];
+        
+        //Vineet key
+        //[Utils userDefaultsSetObject:@"9e1e4655e646064ba9897579061a2947" forKey:ZOHO_CRM_API_KEY];
+        
+        //Vineet Key -2
+        // [Utils userDefaultsSetObject:@"efd4649757af08308d831905b88ae263" forKey:ZOHO_CRM_API_KEY];
+        
+        //[Utils userDefaultsSetObject:[NSString stringWithFormat:@"%d",0] forKey:IPITCH_FIRST_RUN];
+        
+        [Utils userDefaultsSetObject:INSURANCE_DOMAIN forKey:IPITCH_CURRENT_DOMAIN];
+        [Utils userDefaultsSetObject:INSURANCE_STAGES_PLIST forKey:IPITCH_CURRENT_DOMAIN_PLIST_FILE];
+        
+
+        [ThemeHelper setCurrentTheme:IPITCH_THEME2_NAME];
+    }
+        
+    [ThemeHelper applyCurrentThemeToView];
+
+    
+    self.isLoadingOtherModuleData=NO;
+    //copying resources to Documents folder
+
+    [self copyLocalResourcesInBundleToNSDocumentsDirectory];
+    
+    //Selected pages array for PDF Page generation
+
+    selectedPages=[[NSMutableArray alloc]init];
+   // opportArray = [[NSMutableArray alloc]init];
+   // acntArray   = [[NSMutableArray alloc]init];
+    
+    //Initializing Gesture Recognition for 'N' and 'C'
+   	//[self addSwipeToToggle];
+    
+    [self initializeAlphabeticGestures];
+    
+    [self updateFilesInDocumentsDirectory];
+    
+    [self createPlaylists];
+    
+    //handling notificaitons that were generated when the app was not alive.
+    UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    
+    if (localNotification)
+	{
+        [NotificationsHelper handleReceivedNotification:localNotification];
+    }
+    
+   
+   
+     return YES;
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [CTSDropBoxHelper handleOpenUrl:url];
+    
+}
+
+- (void)application:(UIApplication *)app didReceiveLocalNotification:(UILocalNotification *)localNotification {
+    
+	[NotificationsHelper handleReceivedNotification:localNotification];
+}
+
+-(void)applicationDidTimeOut:(NSNotification *)notification
+{
+    if(![self.window.rootViewController.navigationController.visibleViewController isKindOfClass:[LoginViewController class]])
+    {
+        [Utils clearAllTempFiles];
+        [self.viewController.dashBoard.navigationController dismissModalViewControllerAnimated:YES];
+        [self.viewController.dashBoard.navigationController popToRootViewControllerAnimated:YES];
+    }
+}
+#pragma mark Documents Helper Methods
+
+- (NSString *)applicationDocumentsDirectory
+{
+	return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+//************************************************************************
+// Method for copying files in bundle to  NSDocumentsDirectory.
+//************************************************************************
+-(void)copyLocalResourcesInBundleToNSDocumentsDirectory
+{
+    [self copyBundleFileNamed:@"Sales Life Cycles" andType:@"pdf"];
+    [self copyBundleFileNamed:@"iPitch Product" andType:@"pdf"];
+    [self copyBundleFileNamed:@"iPitch" andType:@"pdf"];
+    [self copyBundleFileNamed:@"iPitch Product" andType:@"mp4"];
+    [self copyBundleFileNamed:@"Android" andType:@"mp4"];
+
+}
+
+//************************************************************************
+// Method for copying a file to  NSDocumentsDirectory.
+//************************************************************************
+
+- (void)copyBundleFileNamed:(NSString *)fileInBundle andType:(NSString *)fileType
+{
+    NSString *destFName = [NSString stringWithFormat:@"%@.%@",fileInBundle,fileType];
+    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:destFName];
+    
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	// If the expected store doesn't exist, copy the default store.
+	if (![fileManager fileExistsAtPath:storePath]) {
+		NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:fileInBundle ofType:fileType];
+		if (defaultStorePath) {
+            [fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
+            
+            
+		}
+	}
+    
+    
+}
+
+//************************************************************************
+// Method for copying a file to a folder in NSDocumentsDirectory.
+//************************************************************************
+
+- (void)copyBundleFileNamed:(NSString *)fileInBundle andType:(NSString *)fileType ToFolder:(NSString *)folderName{
+    
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSString *destFName = [NSString stringWithFormat:@"%@/%@.%@",folderName,fileInBundle,fileType];
+    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:destFName];
+    
+	if ([fileManager fileExistsAtPath:storePath]) {
+		NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:fileInBundle ofType:fileType];
+		if (defaultStorePath) {
+			[fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
+		}
+	}
+    
+    else{
+        
+        NSString* dirToCreate = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:
+                                 folderName];
+        NSError *error = nil;
+        
+        BOOL isExist = [fileManager fileExistsAtPath:dirToCreate isDirectory:NO];
+        if (isExist)
+        {
+            [fileManager removeItemAtPath:dirToCreate error:NULL];
+        }
+        if(![fileManager createDirectoryAtPath:dirToCreate withIntermediateDirectories:YES attributes:nil error:&error])
+            NSLog(@"Error: Create folder failed");
+        
+        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:fileInBundle ofType:fileType];
+		if (defaultStorePath) {
+			[fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
+        }
+        
+    }
+}
+
+//************************************************************************
+// Method for updating files stored in NSDocumentsDirectory.
+//************************************************************************
+- (void)updateFilesInDocumentsDirectory
+{
+    NSString *rootPath=@"";
+    
+    rootPath=  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    NSFileManager *manager = [[NSFileManager alloc] init];
+    
+    
+    NSArray *allList= [NSArray arrayWithArray:[manager contentsOfDirectoryAtPath:rootPath error:nil]];
+    
+    for(NSString *file in allList)
+    {
+        NSString *path = [rootPath stringByAppendingPathComponent:file];
+        BOOL isDir = NO;
+        if ([manager fileExistsAtPath:path isDirectory:(&isDir)])
+        {
+            
+            //adding all files except sqlite and bin - box stored creadnetials.
+            if (! ([[path pathExtension] isEqualToString:@"sqlite"] || [[path pathExtension] isEqualToString:@"bin"] ))
+            {
+                
+                //Checking if it is a folder & creating a Folder object and inserting to Core data.
+                
+                [Utils makeItemAtPathSecure:path];
+
+                if(isDir)
+                {
+                    NSManagedObjectContext *context=self.managedObjectContext;
+                    
+                    if(![self checkAttributeWithAttributeName:@"folderName" InEntityWithEntityName:@"Folder" ForPreviousItems:file inContext:context])
+                    {
+                        Folder *fileObject=[NSEntityDescription
+                                            insertNewObjectForEntityForName:@"Folder"
+                                            inManagedObjectContext:context];
+                        
+                        fileObject.folderName=file;
+                        fileObject.folderPath=path;
+                        
+                        NSError *error=nil;
+                        
+                        if (![context save:&error])
+                        {
+                            NSLog(@"Sorry, couldn't save Files %@", [error localizedDescription]);
+                        }
+                    }
+                }
+                
+                //creating a File object and inserting to Core data.
+                
+                                
+                else
+                {
+                    NSManagedObjectContext *context=self.managedObjectContext;
+                    
+                    if(![self checkAttributeWithAttributeName:@"fileName" InEntityWithEntityName:@"File" ForPreviousItems:file inContext:context])
+                    {
+                        File *fileObject=[NSEntityDescription
+                                          insertNewObjectForEntityForName:@"File"
+                                          inManagedObjectContext:context];
+                        
+                        fileObject.fileName=file;
+                        fileObject.filePath=path;
+                        
+                        NSError *error=nil;
+                        
+                        if (![context save:&error])
+                        {
+                            NSLog(@"Sorry, couldn't save Folders %@", [error localizedDescription]);
+                        }
+                        
+                    }
+                    
+                }
+                
+                
+                
+            }
+        }
+        
+    }
+    
+    
+}
+
+
+//************************************************************************
+// Method for plalist creation - by default three playlists will be created.
+//************************************************************************
+
+-(void)createPlaylists
+{
+    if (![SAppDelegateObject checkAttributeWithAttributeName:@"playlistName" InEntityWithEntityName:@"Playlist" ForPreviousItems:@"Playlist 1" inContext:self.managedObjectContext])
+    {
+        Playlist * pl1 = [NSEntityDescription
+                          insertNewObjectForEntityForName:@"Playlist"
+                          inManagedObjectContext:self.managedObjectContext];;
+        pl1. playlistName = @"Playlist 1";
+        
+        
+    }
+    
+    
+    if (![SAppDelegateObject checkAttributeWithAttributeName:@"playlistName" InEntityWithEntityName:@"Playlist" ForPreviousItems:@"Playlist 2" inContext:self.managedObjectContext])
+    {
+        
+        Playlist * pl2 = [NSEntityDescription
+                          insertNewObjectForEntityForName:@"Playlist"
+                          inManagedObjectContext:self.managedObjectContext];;
+        pl2. playlistName = @"Playlist 2";
+        
+    }
+    
+    
+    if (![SAppDelegateObject checkAttributeWithAttributeName:@"playlistName" InEntityWithEntityName:@"Playlist" ForPreviousItems:@"Playlist 3" inContext:self.managedObjectContext])
+    {
+        
+        Playlist * pl3 = [NSEntityDescription
+                          insertNewObjectForEntityForName:@"Playlist"
+                          inManagedObjectContext:self.managedObjectContext];;
+        
+        pl3. playlistName = @"Playlist 3";
+        
+    }
+    
+    NSError *error;
+    
+    if (![self.managedObjectContext save:&error])
+    {
+        NSLog(@"Sorry, couldn't save Playlists %@", [error localizedDescription]);
+    }
+    
+    
+
+}
+
+#pragma mark Gesture to Toggle to Personal Dashboard
+-(void)addSwipeToToggle
+{
+    UIPanGestureRecognizer *toggleSwipe=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(screenToggled)];
+    toggleSwipe.minimumNumberOfTouches=2;
+    toggleSwipe.maximumNumberOfTouches=2;
+    [self.window addGestureRecognizer:toggleSwipe];
+}
+
+-(void)screenToggled
+{
+    if(!appToggleStatus)
+    {
+    UIViewController *dummyController=[[UIViewController alloc]init];
+    dummyController.view.backgroundColor=[UIColor redColor];
+    self.window.rootViewController=dummyController;
+    [self.window makeKeyAndVisible];
+        appToggleStatus=YES;
+    }
+    
+    else
+    {
+        appToggleStatus=NO;
+        self.window.rootViewController=self.viewController;
+
+    }
+}
+#pragma mark Gesture Recognition For Notes, Calculator and other Utilities
+
+//************************************************************************
+// Method for Initializing Alphabetic gesture recognition on all screens
+//************************************************************************
+
+-(void)initializeAlphabeticGestures
+{
+    NSError *gesturesError;
+    recognizer = [[GLGestureRecognizer alloc] init];
+	NSData *jsonData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Gestures" ofType:@"json"]];
+    
+	BOOL ok;
+	ok = [recognizer loadTemplatesFromJsonData:jsonData error:&gesturesError];
+	if (!ok)
+	{
+		NSLog(@"Error loading gestures: %@", gesturesError);
+	}
+
+}
+
+//************************************************************************
+// Method for processing Alphabetic gesture recognition on all screens
+//************************************************************************
+
+- (void)processGestureData
+{
+	NSString *gestureName = [recognizer findBestMatchCenter:&center angle:&angle score:&score];
+    NSLog(@"gesture Name: %@",gestureName);
+    
+//    if ([gestureName isEqualToString:@"N"] || [gestureName isEqualToString:@"n"]) {
+//        
+//        
+//        if ((![((UINavigationController *)self.window.rootViewController).topViewController isKindOfClass:[LoginViewController class]]))
+//        {
+////             if ((![((UINavigationController *)self.window.rootViewController).topViewController isKindOfClass:[ShowAccountsViewController class]]))
+////             {
+//            NoteDetailViewController *vc=[[NoteDetailViewController alloc]initWithNibName:@"NoteDetailViewController" bundle:nil];
+//            
+//            UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
+//
+//            nav.modalPresentationStyle=UIModalPresentationFormSheet;
+//            nav.navigationBarHidden = YES;
+//            [self.window.rootViewController presentModalViewController:nav animated:YES];
+//            vc.navigationController.view.backgroundColor=[UIColor clearColor];
+//            
+//            CGRect r = CGRectMake(self.window.rootViewController.view.bounds.size.width/2 - 250,
+//                                  self.window.rootViewController.view.bounds.size.height/2 - 250,
+//                                  500, 500);
+//            r = [self.window.rootViewController.view convertRect:r toView:vc.view.superview.superview];
+//            vc.view.superview.frame = r;
+////             }
+//        }
+//    }
+    
+    if ([gestureName isEqualToString:@"C"]) {
+        if ((![((UINavigationController *)self.window.rootViewController).topViewController isKindOfClass:[LoginViewController class]]))
+        {
+            SSimpleCalculator *vc=[[SSimpleCalculator alloc]initWithNibName:@"SSimpleCalculator" bundle:nil];
+            
+            vc.modalPresentationStyle=UIModalPresentationFormSheet;
+            
+            [self.window.rootViewController presentModalViewController:vc animated:YES];
+            
+            CGRect r = CGRectMake(self.window.rootViewController.view.bounds.size.width/2 - 250,
+                                  self.window.rootViewController.view.bounds.size.height/2 - 250,
+                                  500, 500);
+            r = [self.window.rootViewController.view convertRect:r toView:vc.view.superview.superview];
+            vc.view.superview.frame = r;
+        }
+    }
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[recognizer resetTouches];
+	[recognizer addTouches:touches fromView:self.window];
+}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[recognizer addTouches:touches fromView:self.window];
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[recognizer addTouches:touches fromView:self.window];
+	
+	[self processGestureData];
+}
+
+
+#pragma mark - Core Data stack
+
+// Returns the managed object context for the application.
+// If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+- (NSManagedObjectContext *)managedObjectContext
+{
+    if (__managedObjectContext != nil) {
+        return __managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        __managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [__managedObjectContext setPersistentStoreCoordinator:coordinator];
+    }
+    return __managedObjectContext;
+}
+
+// Returns the managed object model for the application.
+// If the model doesn't already exist, it is created from the application's model.
+- (NSManagedObjectModel *)managedObjectModel
+{
+    if (__managedObjectModel != nil) {
+        return __managedObjectModel;
+    }
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"iPitchDataModel" withExtension:@"momd"];
+    __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    return __managedObjectModel;
+}
+
+// Returns the persistent store coordinator for the application.
+// If the coordinator doesn't already exist, it is created and the application's store added to it.
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+{
+    if (__persistentStoreCoordinator != nil) {
+        return __persistentStoreCoordinator;
+    }
+    
+    NSURL *storeURL = [[self applicationDocumentsDirectoryForCoreData] URLByAppendingPathComponent:@"iPitchDataModel.sqlite"];
+    
+    NSError *error = nil;
+    __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error])
+    {
+        
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    
+    return __persistentStoreCoordinator;
+}
+
+
+- (void) deleteAllObjects: (NSString *) entityDescription ForContext:(NSManagedObjectContext *)context
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *items = [context executeFetchRequest:fetchRequest error:&error];
+    
+    
+    for (NSManagedObject *managedObject in items) {
+    	[context deleteObject:managedObject];
+    	NSLog(@"%@ object deleted",entityDescription);
+    }
+    if (![context save:&error]) {
+    	NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
+    }
+    
+}
+
+
+- (BOOL)resetDatastore
+{
+    [[self managedObjectContext] lock];
+    [[self managedObjectContext] reset];
+    NSPersistentStore *store = [[[self persistentStoreCoordinator] persistentStores] lastObject];
+    BOOL resetOk = NO;
+    
+    if (store)
+    {
+        NSURL *storeUrl = store.URL;
+        NSError *error;
+        
+        if ([[self persistentStoreCoordinator] removePersistentStore:store error:&error])
+        {
+            __persistentStoreCoordinator = nil;
+            __managedObjectContext = nil;
+            
+            if (![[NSFileManager defaultManager] removeItemAtPath:storeUrl.path error:&error])
+            {
+                NSLog(@"\nresetDatastore. Error removing file of persistent store: %@",
+                      [error localizedDescription]);
+                resetOk = NO;
+            }
+            else
+            {
+                //now recreate persistent store
+                [self persistentStoreCoordinator];
+                [[self managedObjectContext] unlock];
+                resetOk = YES;
+            }
+        }
+        else
+        {
+            NSLog(@"\nresetDatastore. Error removing persistent store: %@",
+                  [error localizedDescription]);
+            resetOk = NO;
+        }
+        return resetOk;
+    }
+    else
+    {
+        NSLog(@"\nresetDatastore. Could not find the persistent store");
+        return resetOk;
+    }
+}
+
+#pragma mark - Core Data Helper Methods
+
+// Returns the URL to the application's Documents directory.
+- (NSURL *)applicationDocumentsDirectoryForCoreData
+{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+
+- (BOOL)checkAttributeWithAttributeName:(NSString *)attributeName InEntityWithEntityName:(NSString *)entityName ForPreviousItems:(NSString *)itemValue inContext:(NSManagedObjectContext *)context
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    fetchRequest.predicate=[NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@==\"%@\"",attributeName,itemValue]];
+    NSSortDescriptor *sortDescriptor=[NSSortDescriptor sortDescriptorWithKey:attributeName ascending:YES];
+    fetchRequest.sortDescriptors=[NSArray arrayWithObject:sortDescriptor];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityName
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSArray *fetchedObjects = [context
+                               executeFetchRequest:fetchRequest error:nil
+                               ];
+    
+    if ([fetchedObjects count]>0) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+#pragma mark -  Mail Sending helper methods
+
+- (void)sendMailToRecipients:(NSArray *)recipients withSubject:(NSString *)subject andMessage:(NSString *)message
+{
+    
+            Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+         if (mailClass != nil)
+         {
+             // We must always check whether the current device is configured for sending emails
+             if ([mailClass canSendMail])
+             {
+                 MFMailComposeViewController *mailController= [[MFMailComposeViewController alloc] init];
+                 
+                 [[mailController navigationBar] setTintColor:[UIColor blackColor]];
+                 
+                 mailController.mailComposeDelegate=self;
+                 
+                 [mailController setSubject:subject];
+                 
+                 if(recipients)
+                 [mailController setToRecipients:recipients];
+                 
+                 NSMutableString *mailbody  = [NSMutableString string];
+                 [mailbody appendString:message];
+                 
+                 [mailController setMessageBody:mailbody isHTML:NO];
+                 
+                 [self.window.rootViewController presentModalViewController:mailController animated:YES];
+                 
+                 mailController = nil;
+             }
+             else
+             {
+                 [self launchMailAppOnDeviceWithSubject:subject AndMessage:message];
+             }
+         }
+    
+}
+
+
+- (void)launchMailAppOnDeviceWithSubject:(NSString *)subject AndMessage:(NSString *)message
+{
+    
+    NSMutableString *mailbody  = [NSMutableString string];
+    [mailbody appendString:message];
+    
+    
+    NSString *recipients = [NSString stringWithFormat:@"mailto:?&subject=%@!",subject];
+    
+    NSString *body = [NSString stringWithFormat:@"&body=%@!",mailbody];;
+    
+    NSString *email = [NSString stringWithFormat:@"%@%@", recipients, body];
+    
+    email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:email]];
+}
+
+
+- (void)sendMailToRecipients:(NSArray *)recipients withSubject:(NSString *)subject andMessage:(NSString *)message WithAttachmentsIfAny:(NSData *)attachmentData andAttachmentType:(NSString *)attachmentType andAttachmentName:(NSString *)attachmentName
+{
+    
+    NSError *error;
+    NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:attachmentName error:&error];
+    
+    NSNumber *fileSizeNumber = [fileAttributes objectForKey:NSFileSize];
+    long long fileSize = [fileSizeNumber longLongValue];
+    
+    NSLog(@"file size: %lld",fileSize);
+    Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+    if (mailClass != nil)
+    {
+        // We must always check whether the current device is configured for sending emails
+        if ([mailClass canSendMail])
+        {
+            MFMailComposeViewController *mailController= [[MFMailComposeViewController alloc] init];
+            mailController.mailComposeDelegate = self;
+            
+            [[mailController navigationBar] setTintColor:[UIColor blackColor]];
+            
+            //PDF Attachement
+            
+            [mailController addAttachmentData:attachmentData mimeType:attachmentType fileName:attachmentName];
+            
+            
+            NSMutableString *subject  = [NSMutableString string];
+            [subject appendString:[NSString stringWithFormat:@"Mailing Document - %@",attachmentName]];
+            [mailController setSubject:subject];
+            
+            NSMutableString *mailbody  = [NSMutableString string];
+            [mailbody appendString:[NSString stringWithFormat: @"Hi, PFA"]];
+            
+            [mailController setMessageBody:mailbody isHTML:NO];
+            
+            [self.window.rootViewController presentModalViewController:mailController animated:YES];
+            mailController = nil;
+        }
+        else
+        {
+            [self launchMailAppOnDeviceForAppointments];
+        }
+    }
+}
+
+- (void)launchMailAppOnDeviceForAppointments
+{
+    
+    NSMutableString *subject  = [NSMutableString string];
+    [subject appendString:@"Meeting"];
+    
+    NSMutableString *mailbody  = [NSMutableString string];
+    [mailbody appendString:@"You and I have an appointment on "];
+    [mailbody appendString:@"To discuss about "];
+    
+    
+    NSString *recipients = [NSString stringWithFormat:@"mailto:?&subject=%@!",subject];
+    
+    NSString *body = [NSString stringWithFormat:@"&body=%@!",mailbody];;
+    
+    NSString *email = [NSString stringWithFormat:@"%@%@", recipients, body];
+    
+    email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:email]];
+}
+
+#pragma mark MFMailComposerDelegate Method
+
+- (void)mailComposeController:(MFMailComposeViewController*)mailController didFinishWithResult:(MFMailComposeResult)result  error:(NSError*)error {
+    UIAlertView *alert;
+    // Notifies users about errors associated with the interface
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Result: canceled");
+			
+            break;
+        case MFMailComposeResultSaved:
+            
+            break;
+        case MFMailComposeResultSent:
+        {
+			NSLog(@"Result: sent");
+            alert=[[UIAlertView alloc] initWithTitle: @"Mail sent" message:@"Mail successfully sent!!!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alert show];
+			alert = nil;
+        }
+            break;
+        case MFMailComposeResultFailed:
+		{
+            
+            NSLog(@"Result: Failed");
+            alert=[[UIAlertView alloc] initWithTitle:@"Failure"  message:@"Mail sending failed" delegate:self cancelButtonTitle: @"Ok" otherButtonTitles:nil];
+            [alert show];
+            alert = nil;
+        }
+            break;
+        default:
+			NSLog(@"Result: not sent");
+            break;
+    }
+    [mailController dismissModalViewControllerAnimated:YES];
+}
+
+
+@end

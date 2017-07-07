@@ -1,0 +1,41 @@
+//
+//  LoginViewController.h
+//  iPitch V2
+//
+//  Created by Satheeshwaran on 1/24/13.
+//  Copyright (c) 2013 Cognizant. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
+#import "DashboardViewController.h"
+#import "LDAPAuthenticator.h"
+#import "NetworkServiceHandler.h"
+#import "SalesForceHelper.h"
+
+@class HomeViewController;
+
+@interface LoginViewController : UIViewController<SWRevealViewControllerDelegate,LDAPCallBack,UITextFieldDelegate>{
+    
+    MBProgressHUD *HUD;
+    
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *userNameField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIImageView *loginLogo;
+@property (nonatomic,strong) DashboardViewController *dashBoard;
+@property (weak, nonatomic) IBOutlet UIImageView *loginDummyImage;
+
+@property (weak, nonatomic) IBOutlet UIImageView *loginLineImage;
+@property (weak, nonatomic) IBOutlet UIImageView *loginCircleImage;
+@property (weak, nonatomic) IBOutlet UIView *loginCircleView;
+@property (nonatomic) BOOL firstTimeLoad;
+@property (weak, nonatomic) IBOutlet UIButton *collateralsHyperLink;
+- (IBAction)collateralsHyperLinkClicked:(id)sender;
+- (IBAction)loginButtonPressed:(UIButton *)sender;
+-(void) encryptCredentialsWithUserName:(NSString *)userName andPassword:(NSString *)passWord;
+-(NSString*)hexRepresentationWithSpaces_AS:(NSData *)dataToEncode withSpaces:(BOOL)spaces;
+
+@end

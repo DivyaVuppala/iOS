@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01.Determine How much Income do you need?</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>15000 - 17999</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>18000 - 22999</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>23000 - 26999</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>27000 - 31999</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>32000 - 35999</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>36000 - 41999</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>42000 - 45999</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>46000 - 50000</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+	<key>02.Determine How long you can go without Income?</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>14 Days</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>30 Days</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>90 Days</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+	<key>03.Benefit Period</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Your Monthly Benefit</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Premium Monthly</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Premium Annual</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Spouse Monthly Benefit</string>
+			<key>Type</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Spouse Premium Monthly</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Spouse Premium Annual</string>
+			<key>Type</key>
+			<string>CheckBox</string>
+		</dict>
+	</array>
+</dict>
+</plist>

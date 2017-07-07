@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6985BEDD-09A4-4B31-86F5-476609C16B6C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iPitch V2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3F3395DD-EB00-4A61-8032-DC418A1ED6C6</key>
+		<string>https://c2p.cognizant.com/repository/Mobile_CoE_Projects/trunk/iPitch_Cognizant</string>
+		<key>FD671008-853C-41F6-A91B-5926EDEF15BF</key>
+		<string>https://github.com/satheeshwaran/SNSDateUtils.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPitch V2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3F3395DD-EB00-4A61-8032-DC418A1ED6C6</key>
+		<string>../..</string>
+		<key>FD671008-853C-41F6-A91B-5926EDEF15BF</key>
+		<string>../../iPitch Source/Classes/Utils/Date &amp; Calendar Utils</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>3F3395DD-EB00-4A61-8032-DC418A1ED6C6</key>
+		<string>https://c2p.cognizant.com/repository/Mobile_CoE_Projects</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://c2p.cognizant.com/repository/Mobile_CoE_Projects/trunk/iPitch_Cognizant/iPitch%20V2.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3F3395DD-EB00-4A61-8032-DC418A1ED6C6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FD671008-853C-41F6-A91B-5926EDEF15BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Date &amp; Calendar Utils</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3F3395DD-EB00-4A61-8032-DC418A1ED6C6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPitch_Cognizant</string>
+		</dict>
+	</array>
+</dict>
+</plist>

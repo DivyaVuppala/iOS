@@ -1,0 +1,262 @@
+//
+//  HomeViewController.m
+//  iPitch V2
+//
+//  Created by Satheeshwaran on 1/24/13.
+//  Copyright (c) 2013 Cognizant. All rights reserved.
+//
+
+#import "HomeViewController.h"
+#import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "HomeViewController.h"
+#import "DocumentTableView.h"
+#import "CustomerViewController.h"
+#import "OpportunitiesViewController.h"
+#import "ZohoHelper.h"
+
+
+// Uncomment the following line to use the built in calendar as a source for events:
+//#define USE_EVENTKIT_DATA_SOURCE 1
+
+#define SAppDelegateObject ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
+#define DATE_COMPONENTS (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit)
+#define CURRENT_CALENDAR [NSCalendar currentCalendar]
+
+@interface HomeViewController ()
+
+@end
+
+
+@implementation HomeViewController
+
+@synthesize calendarView,liveNewsView,sdayView,navControl,documentsView,documentsButton,customersButton,customersView,oppurtunitiesButton,oppurtunitiesView;
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+    parsedItems=[[NSMutableArray alloc]init];
+
+    
+    
+//    MADayView *dayView=[[MADayView alloc]initWithFrame:CGRectMake(10, 100, 565, 500)];
+//    dayView.delegate=self;
+//    dayView.dataSource=self;
+//    [self.calendarView addSubview:dayView];
+    
+    
+    /*NSURL *feedURL = [NSURL URLWithString:@"http://www.techgig.com/newsfeed"];
+    
+    // NSURL *feedURL = [NSURL URLWithString:@"http://news.google.com/?output=rss"];
+	feedParser = [[MWFeedParser alloc] initWithFeedURL:feedURL];
+	feedParser.delegate = self;
+	feedParser.feedParseType = ParseTypeFull; // Parse feed info and all items
+	feedParser.connectionType = ConnectionTypeAsynchronously;
+	[feedParser parse];*/
+    
+    
+    metroTile=[[MetroTile alloc]initWithFrame:CGRectMake(20, 50, 300, 200)];
+    [metroTile setBackgroundColor:[UIColor blackColor]];
+    [metroTile setAnimationType:MetroTileAnimationTypeHorizontal];
+    [self.liveNewsView addSubview:metroTile];
+    
+    
+    sdayView=[[SDayViewController alloc]initWithNibName:@"SDayViewController" bundle:nil];
+    
+    
+    //[sdayView.view setFrame:CGRectMake(10, 100, 565, 500)];
+    
+    //[self.calendarView addSubview:sdayView.view];
+    
+    UIViewController *controller=[[UIViewController alloc]init];
+    
+    navControl=[[UINavigationController alloc]initWithRootViewController:controller];
+    
+    //[navControl.view addSubview:sdayView.view];
+    navControl.navigationBarHidden=YES;
+    [navControl.view setFrame:CGRectMake(20, 80, self.view.frame.size.width-40, self.view.frame.size.height-80)];
+
+    [controller.view addSubview:calendarView];
+    
+    
+    [controller.view addSubview:documentsView];
+    
+    [controller.view addSubview:customersView];
+    
+    [controller.view addSubview:oppurtunitiesView];
+    
+    [self.view addSubview:navControl.view];
+    
+    //navControl.navigationBarHidden=YES;
+    
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    
+    navControl.navigationBarHidden=YES;
+    
+    BoxUser* userModel = [BoxUser savedUser];
+    
+    
+    if(/*![self.dBHelper checkForSession:self]*//*for dropBox*/  /*||*/ !userModel/*for box*/)
+    {
+        [self BoxLogin];
+
+    }
+    else
+    {
+        
+        // For DropBox
+        //  [self.dBHelper linkDropBoxAccountForVC:self];
+        
+        
+        //For Box
+    }
+    [super viewWillAppear:animated];
+
+}
+
+
+-(void)BoxLogin
+{
+     vc = [BoxLoginViewController loginViewControllerWithNavBar:YES]; //Since NO was passed in here, the view controller can be presented however you want. However, no navigation bar will be included.
+    vc.modalPresentationStyle = UIModalPresentationFormSheet;
+    vc.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+    
+    [BoxCommonUISetup formatNavigationBarWithBoxIconAndColorScheme:vc.navigationController andNavItem:vc.navigationItem]; //Adds the box styling to the navigation item of the view. This is optional.
+    vc.boxLoginDelegate = self;
+    //  [self.navigationController pushViewController:vc animated:YES];
+    [SAppDelegateObject.viewController.navigationController presentModalViewController:vc animated:YES];
+    
+    CGRect r = CGRectMake(self.view.bounds.size.width/2 - 325, self.view.bounds.size.height/2 - 250,650, 500);
+    r = [self.view convertRect:r toView:vc.view.superview.superview];
+    vc.view.superview.frame = r;
+    
+    //[promptForDropBoxCredentials removeFromSuperview];
+    
+    
+}
+
+- (void)boxLoginViewController:(BoxLoginViewController *)boxLoginViewController didFinishWithResult:(LoginResult)result {
+    
+    if(result==LoginSuccess)
+    {
+//        BoxDownloadActionViewController * inputController = [[BoxDownloadActionViewController alloc] initWithFolderID:@"0"];
+//        
+//        [viewTail buildBoxFolderListAfterLogin:inputController];
+        
+        [vc dismissModalViewControllerAnimated:YES];
+
+    }
+    
+       
+    if (result==LoginCancelled)
+    {
+       [vc dismissModalViewControllerAnimated:YES];
+    }
+    
+    
+    
+    //  [self.navigationController popViewControllerAnimated:YES]; //Only one of these lines should actually be used depending on how you choose to present it.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+}
+
+
+-(void)segmentedControlChangedValue:(id)sender
+{
+    
+}
+
+- (IBAction)calendarClicked:(id)sender {
+    
+    
+    sdayView=[[SDayViewController alloc]initWithNibName:@"SDayViewController" bundle:nil];
+    
+    
+    RearMasterTableViewController *rearViewController = [[RearMasterTableViewController alloc] init];
+    
+    SWRevealViewController *mainRevealController =
+    [[SWRevealViewController alloc] initWithRearViewController:rearViewController frontViewController:sdayView];
+    
+    mainRevealController.rearViewRevealWidth = 200;
+    mainRevealController.rearViewRevealOverdraw = 150;
+    mainRevealController.bounceBackOnOverdraw = NO;
+    mainRevealController.stableDragOnOverdraw = YES;
+    [mainRevealController setFrontViewPosition:FrontViewPositionLeft];
+    
+    mainRevealController.delegate = self;
+    
+    
+    [SAppDelegateObject.viewController.navigationController pushViewController:mainRevealController animated:YES];
+    // [navControl pushViewController:sdayView animated:YES];
+}
+
+
+- (IBAction)customersClicked:(id)sender {
+    
+    HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    HUD.labelText = @"Loading..";
+    [self performSelectorInBackground:@selector(loginZoho) withObject:nil];
+    
+    
+}
+-(void)loginZoho{
+    
+    ZohoHelper * abc = [[ZohoHelper alloc]init];
+    [abc FetchContactsFromZoho];
+    [self performSelectorOnMainThread:@selector(updateMainthread) withObject:Nil waitUntilDone:YES];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+}
+
+
+
+
+
+-(void)updateMainthread{
+    CustomerViewController *custView = [[CustomerViewController alloc]initWithNibName:@"CustomerViewController" bundle:nil];
+    
+    [navControl pushViewController:custView animated:YES];
+}
+
+
+
+
+- (void)viewDidUnload {
+    [self setCalendarView:nil];
+    [self setLiveNewsView:nil];
+    [self setDocumentsView:nil];
+    [self setDocumentsButton:nil];
+    [self setCustomersButton:nil];
+
+    [self setCustomersView:nil];
+    [self setOppurtunitiesView:nil];
+    [self setOppurtunitiesButton:nil];
+    [super viewDidUnload];
+}
+- (IBAction)documentsClicked:(id)sender {
+    
+    //DocumentTableView * documentView = [[DocumentTableView alloc]initWithNibName:@"DocumentTableView" bundle:nil];
+  
+}
+- (IBAction)oppurtunitiesPressed:(id)sender {
+        OpportunitiesViewController * oppurtunitiesVC = [[OpportunitiesViewController alloc]initWithNibName:@"OppurtunitiesViewController" bundle:nil];
+       [navControl pushViewController:oppurtunitiesVC animated:YES];
+}
+
+
+@end

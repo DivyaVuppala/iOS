@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mandatory</key>
+	<array>
+		<string>May 2013 – Training for ‘Free for Life’ product to be launched in June 2013</string>
+	</array>
+	<key>Recommended</key>
+	<array>
+		<string>‘Effective customer engagement’ – Online workshop conducted by NewYork Personality Development Institute</string>
+		<string>Sales Effectiveness’ – Hands on training conducted by Dele Carnegie Training</string>
+	</array>
+	<key>Industry reports</key>
+	<array>
+		<string>Forrester : ‘Prevent Insurance Crime with the Four Corner stones of Better Fraud Management’</string>
+		<string>Forrester Case study : ‘Insurance Gets progressive with Loyalty’</string>
+		<string>Forrester report : ‘Innovation in Health Insurance customer experience’</string>
+	</array>
+</dict>
+</plist>
